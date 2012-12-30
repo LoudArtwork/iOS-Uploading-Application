@@ -15,27 +15,25 @@
 		E758B0DB165DEC220010C0CC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E758B0D9165DEC220010C0CC /* InfoPlist.strings */; };
 		E758B0DD165DEC220010C0CC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E758B0DC165DEC220010C0CC /* main.m */; };
 		E758B0E1165DEC220010C0CC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E758B0E0165DEC220010C0CC /* AppDelegate.m */; };
-		E758B0E3165DEC220010C0CC /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = E758B0E2165DEC220010C0CC /* Default.png */; };
 		E758B0EA165DEC220010C0CC /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E758B0E8165DEC220010C0CC /* MainStoryboard_iPhone.storyboard */; };
 		E758B0ED165DEC220010C0CC /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E758B0EB165DEC220010C0CC /* MainStoryboard_iPad.storyboard */; };
 		E758B0F0165DEC220010C0CC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E758B0EF165DEC220010C0CC /* ViewController.m */; };
 		E75FC7041664ADCE00048E67 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E75FC7031664ADCE00048E67 /* MenuViewController.m */; };
 		E75FC7071664AEFB00048E67 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E75FC7061664AEFB00048E67 /* libsqlite3.dylib */; };
 		E75FC70A1664B10600048E67 /* CameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E75FC7091664B10600048E67 /* CameraViewController.m */; };
-		E76EF6D9166154BA0056BF60 /* logophone.png in Resources */ = {isa = PBXBuildFile; fileRef = E76EF6D8166154BA0056BF60 /* logophone.png */; };
-		E76EF6DB166154C70056BF60 /* logophoneretina.png in Resources */ = {isa = PBXBuildFile; fileRef = E76EF6DA166154C70056BF60 /* logophoneretina.png */; };
-		E76EF6DD166154D00056BF60 /* logopad.png in Resources */ = {isa = PBXBuildFile; fileRef = E76EF6DC166154D00056BF60 /* logopad.png */; };
-		E76EF6DF166154D40056BF60 /* logopadretina.png in Resources */ = {isa = PBXBuildFile; fileRef = E76EF6DE166154D40056BF60 /* logopadretina.png */; };
 		E76EF6E1166154F30056BF60 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E76EF6E0166154F30056BF60 /* MobileCoreServices.framework */; };
 		E76EF6E91661594C0056BF60 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E76EF6E81661594C0056BF60 /* LoginViewController.m */; };
 		E76EF6EB166159B10056BF60 /* officiallogo.png in Resources */ = {isa = PBXBuildFile; fileRef = E76EF6EA166159B10056BF60 /* officiallogo.png */; };
+		E77648681690A9CE0074E911 /* logophone.png in Resources */ = {isa = PBXBuildFile; fileRef = E76EF6D8166154BA0056BF60 /* logophone.png */; };
+		E77648691690A9D00074E911 /* logophoneretina.png in Resources */ = {isa = PBXBuildFile; fileRef = E76EF6DA166154C70056BF60 /* logophoneretina.png */; };
+		E776486B1690A9D60074E911 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = E776486A1690A9D60074E911 /* Default.png */; };
+		E776486C1690A9DF0074E911 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E7EE91D81675219700687D04 /* Default@2x.png */; };
+		E776486D1690A9E30074E911 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E7EE91D61675218500687D04 /* Default-568h@2x.png */; };
+		E776486E1690A9E90074E911 /* logopad.png in Resources */ = {isa = PBXBuildFile; fileRef = E76EF6DC166154D00056BF60 /* logopad.png */; };
+		E776486F1690A9EA0074E911 /* logopadretina.png in Resources */ = {isa = PBXBuildFile; fileRef = E76EF6DE166154D40056BF60 /* logopadretina.png */; };
 		E777786D1672512700C6BC08 /* InfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E777786C1672512700C6BC08 /* InfoViewController.m */; };
 		E7A635B016689B57009E4031 /* AccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7A635AF16689B57009E4031 /* AccountViewController.m */; };
 		E7CECDCE167049F200420B3B /* CreateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7CECDCD167049F200420B3B /* CreateViewController.m */; };
-		E7EE91D31675217A00687D04 /* Retina4.png in Resources */ = {isa = PBXBuildFile; fileRef = E7EE91D11675217A00687D04 /* Retina4.png */; };
-		E7EE91D41675217A00687D04 /* Retina35.png in Resources */ = {isa = PBXBuildFile; fileRef = E7EE91D21675217A00687D04 /* Retina35.png */; };
-		E7EE91D71675218500687D04 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E7EE91D61675218500687D04 /* Default-568h@2x.png */; };
-		E7EE91D91675219700687D04 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E7EE91D81675219700687D04 /* Default@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -71,14 +69,13 @@
 		E76EF6E71661594C0056BF60 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		E76EF6E81661594C0056BF60 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		E76EF6EA166159B10056BF60 /* officiallogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = officiallogo.png; sourceTree = "<group>"; };
+		E776486A1690A9D60074E911 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = ../Default.png; sourceTree = "<group>"; };
 		E777786B1672512700C6BC08 /* InfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoViewController.h; sourceTree = "<group>"; };
 		E777786C1672512700C6BC08 /* InfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoViewController.m; sourceTree = "<group>"; };
 		E7A635AE16689B57009E4031 /* AccountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountViewController.h; sourceTree = "<group>"; };
 		E7A635AF16689B57009E4031 /* AccountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountViewController.m; sourceTree = "<group>"; };
 		E7CECDCC167049F200420B3B /* CreateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateViewController.h; sourceTree = "<group>"; };
 		E7CECDCD167049F200420B3B /* CreateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateViewController.m; sourceTree = "<group>"; };
-		E7EE91D11675217A00687D04 /* Retina4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Retina4.png; path = ../../../../../Desktop/splash/Retina4.png; sourceTree = "<group>"; };
-		E7EE91D21675217A00687D04 /* Retina35.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Retina35.png; path = ../../../../../Desktop/splash/Retina35.png; sourceTree = "<group>"; };
 		E7EE91D61675218500687D04 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../Default-568h@2x.png"; sourceTree = "<group>"; };
 		E7EE91D81675219700687D04 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "../Default@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -159,8 +156,7 @@
 		E76EF6E5166155320056BF60 /* Pictures */ = {
 			isa = PBXGroup;
 			children = (
-				E7EE91D11675217A00687D04 /* Retina4.png */,
-				E7EE91D21675217A00687D04 /* Retina35.png */,
+				E776486A1690A9D60074E911 /* Default.png */,
 				E76EF6EA166159B10056BF60 /* officiallogo.png */,
 				E76EF6D8166154BA0056BF60 /* logophone.png */,
 				E76EF6DA166154C70056BF60 /* logophoneretina.png */,
@@ -247,18 +243,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				E758B0DB165DEC220010C0CC /* InfoPlist.strings in Resources */,
-				E758B0E3165DEC220010C0CC /* Default.png in Resources */,
 				E758B0EA165DEC220010C0CC /* MainStoryboard_iPhone.storyboard in Resources */,
 				E758B0ED165DEC220010C0CC /* MainStoryboard_iPad.storyboard in Resources */,
-				E76EF6D9166154BA0056BF60 /* logophone.png in Resources */,
-				E76EF6DB166154C70056BF60 /* logophoneretina.png in Resources */,
-				E76EF6DD166154D00056BF60 /* logopad.png in Resources */,
-				E76EF6DF166154D40056BF60 /* logopadretina.png in Resources */,
 				E76EF6EB166159B10056BF60 /* officiallogo.png in Resources */,
-				E7EE91D31675217A00687D04 /* Retina4.png in Resources */,
-				E7EE91D41675217A00687D04 /* Retina35.png in Resources */,
-				E7EE91D71675218500687D04 /* Default-568h@2x.png in Resources */,
-				E7EE91D91675219700687D04 /* Default@2x.png in Resources */,
+				E77648681690A9CE0074E911 /* logophone.png in Resources */,
+				E77648691690A9D00074E911 /* logophoneretina.png in Resources */,
+				E776486B1690A9D60074E911 /* Default.png in Resources */,
+				E776486C1690A9DF0074E911 /* Default@2x.png in Resources */,
+				E776486D1690A9E30074E911 /* Default-568h@2x.png in Resources */,
+				E776486E1690A9E90074E911 /* logopad.png in Resources */,
+				E776486F1690A9EA0074E911 /* logopadretina.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
