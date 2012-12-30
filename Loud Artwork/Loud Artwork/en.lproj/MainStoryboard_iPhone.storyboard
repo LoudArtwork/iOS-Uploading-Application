@@ -252,7 +252,11 @@
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CiP-sB-xrY">
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NJb-bs-Uek"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NJb-bs-Uek">
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="300" id="ZC0-0O-WbC"/>
+                                        </constraints>
+                                    </imageView>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Age" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tPO-xd-PTr">
                                         <constraints>
                                             <constraint firstAttribute="width" constant="97" id="HUy-63-PYS"/>
@@ -275,9 +279,6 @@
                                         </connections>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xxj-IL-uXz">
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="125" id="KgX-32-9Tv"/>
-                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <connections>
@@ -302,26 +303,31 @@
                                             <action selector="cameraButton:" destination="HZb-GA-Jb9" eventType="touchUpInside" id="IWT-nO-Zbp"/>
                                         </connections>
                                     </button>
+                                    <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="kSS-KX-yjO">
+                                        <color key="color" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    </activityIndicatorView>
                                 </subviews>
                                 <color key="backgroundColor" red="0.87843143940000001" green="0.94901967050000002" blue="0.98039221759999995" alpha="1" colorSpace="deviceRGB"/>
                                 <constraints>
                                     <constraint firstItem="Gfi-G1-gPh" firstAttribute="baseline" secondItem="tPO-xd-PTr" secondAttribute="baseline" type="default" id="3Wi-1k-7Br"/>
                                     <constraint firstItem="xxj-IL-uXz" firstAttribute="top" secondItem="CiP-sB-xrY" secondAttribute="top" constant="339" id="43f-8J-yj1"/>
-                                    <constraint firstItem="Gfi-G1-gPh" firstAttribute="centerX" secondItem="CiP-sB-xrY" secondAttribute="centerX" type="default" id="FN5-fa-4nq"/>
                                     <constraint firstItem="jlF-on-7l7" firstAttribute="trailing" secondItem="tPO-xd-PTr" secondAttribute="trailing" type="default" id="G9a-Ic-U0y"/>
                                     <constraint firstItem="tPO-xd-PTr" firstAttribute="leading" secondItem="xxj-IL-uXz" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="Gjc-qG-L9Y"/>
+                                    <constraint firstItem="kSS-KX-yjO" firstAttribute="trailing" secondItem="xxj-IL-uXz" secondAttribute="trailing" type="default" id="JZU-3L-kFF"/>
+                                    <constraint firstItem="Gfi-G1-gPh" firstAttribute="top" secondItem="CiP-sB-xrY" secondAttribute="top" constant="-1" id="Jtn-Bj-aXf"/>
                                     <constraint firstItem="tPO-xd-PTr" firstAttribute="baseline" secondItem="xxj-IL-uXz" secondAttribute="baseline" type="default" id="MkG-ZN-pCB"/>
+                                    <constraint firstItem="kSS-KX-yjO" firstAttribute="centerX" secondItem="jlF-on-7l7" secondAttribute="centerX" type="default" id="P7M-bz-o0e"/>
+                                    <constraint firstItem="kSS-KX-yjO" firstAttribute="top" secondItem="Gfi-G1-gPh" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="Ps4-aq-brI"/>
                                     <constraint firstItem="jlF-on-7l7" firstAttribute="top" secondItem="xxj-IL-uXz" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="UXa-fC-LR1"/>
-                                    <constraint firstItem="Gfi-G1-gPh" firstAttribute="bottom" secondItem="NJb-bs-Uek" secondAttribute="bottom" type="default" id="Uqs-Bj-djJ"/>
                                     <constraint firstItem="NJb-bs-Uek" firstAttribute="top" secondItem="CiP-sB-xrY" secondAttribute="top" type="default" id="Wua-aW-mjj"/>
-                                    <constraint firstItem="Gfi-G1-gPh" firstAttribute="centerX" secondItem="jlF-on-7l7" secondAttribute="centerX" type="default" id="b2Y-SR-XnQ"/>
+                                    <constraint firstItem="NJb-bs-Uek" firstAttribute="centerX" secondItem="CiP-sB-xrY" secondAttribute="centerX" type="default" id="XKA-CM-gLV"/>
+                                    <constraint firstItem="kSS-KX-yjO" firstAttribute="centerX" secondItem="NJb-bs-Uek" secondAttribute="centerX" type="default" id="aRy-bB-7sR"/>
                                     <constraint firstAttribute="trailing" secondItem="NJb-bs-Uek" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="hRQ-zs-1L3"/>
                                     <constraint firstItem="NJb-bs-Uek" firstAttribute="leading" secondItem="CiP-sB-xrY" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="hWl-8K-O5K"/>
                                     <constraint firstItem="jlF-on-7l7" firstAttribute="leading" secondItem="xxj-IL-uXz" secondAttribute="leading" type="default" id="iVB-gd-HxU"/>
                                     <constraint firstAttribute="trailing" secondItem="Gfi-G1-gPh" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="mSb-rG-OWS"/>
                                     <constraint firstAttribute="bottom" secondItem="jlF-on-7l7" secondAttribute="bottom" constant="9" id="t2Y-rL-XjW"/>
                                     <constraint firstItem="Gfi-G1-gPh" firstAttribute="leading" secondItem="CiP-sB-xrY" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="thb-tB-81W"/>
-                                    <constraint firstItem="Gfi-G1-gPh" firstAttribute="top" secondItem="CiP-sB-xrY" secondAttribute="top" type="default" id="yAc-FP-Zpc"/>
                                 </constraints>
                             </scrollView>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v0V-NN-OsD">
@@ -354,6 +360,7 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>
+                        <outlet property="actInd" destination="kSS-KX-yjO" id="Oli-zi-7K1"/>
                         <outlet property="age" destination="tPO-xd-PTr" id="ctN-bQ-yGm"/>
                         <outlet property="buttonHide" destination="Gfi-G1-gPh" id="Y1c-fb-HTe"/>
                         <outlet property="cameraImage" destination="NJb-bs-Uek" id="gWc-Bz-KuU"/>
@@ -1515,6 +1522,7 @@ www.loudartwork.com</string>
                 <relationship kind="action" name="movePhoneUp:"/>
                 <relationship kind="action" name="retractKeyBoard:"/>
                 <relationship kind="action" name="uploadButton:"/>
+                <relationship kind="outlet" name="actInd" candidateClass="UIActivityIndicatorView"/>
                 <relationship kind="outlet" name="age" candidateClass="UITextField"/>
                 <relationship kind="outlet" name="buttonHide" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="cameraImage" candidateClass="UIImageView"/>
@@ -1561,7 +1569,6 @@ www.loudartwork.com</string>
                 <relationship kind="action" name="accountButton:"/>
                 <relationship kind="action" name="cameraButton:"/>
                 <relationship kind="action" name="gotoWebsite:"/>
-                <relationship kind="outlet" name="actInd" candidateClass="UIActivityIndicatorView"/>
             </relationships>
         </class>
         <class className="NSLayoutConstraint" superclassName="NSObject">
@@ -1599,7 +1606,7 @@ www.loudartwork.com</string>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
         <segue reference="6bo-2g-928"/>
-        <segue reference="P3b-xh-J4j"/>
+        <segue reference="S6b-2Y-cJz"/>
         <segue reference="0xM-7X-S3I"/>
     </inferredMetricsTieBreakers>
 </document>

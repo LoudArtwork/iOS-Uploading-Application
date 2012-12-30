@@ -24,5 +24,6 @@
 @property (weak, nonatomic) IBOutlet UITextField *age;
 @property (weak, nonatomic) IBOutlet UITextField *ema;
 @property (weak, nonatomic) IBOutlet UIButton *buttonHide;
+@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *actInd;
 
 @end

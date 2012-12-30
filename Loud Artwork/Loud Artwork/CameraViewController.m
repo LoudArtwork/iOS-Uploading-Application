@@ -57,6 +57,13 @@
 }
 
 - (IBAction)uploadButton:(id)sender {
+    [self.actInd startAnimating];  //Or whatever UI Change you need to make
+    [self performSelector: @selector(uploadMethod)
+               withObject: nil
+               afterDelay: 0];
+    return;}
+
+- (void) uploadMethod {
     NSString *bid;
     // ---------- Get Business ID ---------- //
     NSString *docPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)objectAtIndex:0];
