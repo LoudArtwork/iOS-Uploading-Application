@@ -207,7 +207,6 @@
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="5Yg-iR-IuZ" firstAttribute="top" secondItem="Sho-oq-4Cs" secondAttribute="top" constant="7" id="4gP-W9-7fl"/>
-                                    <constraint firstItem="Zor-wk-ncw" firstAttribute="centerX" secondItem="Sho-oq-4Cs" secondAttribute="centerX" type="default" id="Bus-28-aht"/>
                                     <constraint firstItem="Ha8-ag-oTi" firstAttribute="top" secondItem="GOD-rQ-ta2" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="Dae-IW-E8g"/>
                                     <constraint firstItem="U7j-3I-F4Q" firstAttribute="leading" secondItem="Zor-wk-ncw" secondAttribute="leading" type="default" id="NNp-xQ-uJM"/>
                                     <constraint firstItem="Ha8-ag-oTi" firstAttribute="trailing" secondItem="GOD-rQ-ta2" secondAttribute="trailing" type="default" id="PGP-dx-zX7"/>
@@ -221,6 +220,7 @@
                                     <constraint firstItem="Ha8-ag-oTi" firstAttribute="trailing" secondItem="U7j-3I-F4Q" secondAttribute="trailing" type="default" id="k5O-Zf-M07"/>
                                     <constraint firstItem="Zor-wk-ncw" firstAttribute="top" secondItem="U7j-3I-F4Q" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="mAC-15-6Ku"/>
                                     <constraint firstItem="U7j-3I-F4Q" firstAttribute="top" secondItem="Ha8-ag-oTi" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="rPn-R1-6fy"/>
+                                    <constraint firstItem="Ha8-ag-oTi" firstAttribute="centerX" secondItem="Sho-oq-4Cs" secondAttribute="centerX" type="default" id="tPh-q3-QUc"/>
                                 </constraints>
                             </scrollView>
                         </subviews>
@@ -1487,14 +1487,119 @@ www.loudartwork.com</string>
     <resources>
         <image name="officiallogo.png" width="1200" height="1200"/>
     </resources>
+    <classes>
+        <class className="AccountViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/AccountViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="logOut:"/>
+                <relationship kind="action" name="retractKeyBoard:"/>
+                <relationship kind="action" name="saveButton:"/>
+                <relationship kind="action" name="uploadAd:"/>
+                <relationship kind="outlet" name="add" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="bid" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="city" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="cou" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="ema" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="nam" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="pho" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="pos" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="pro" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+        <class className="CameraViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/CameraViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="backButton:"/>
+                <relationship kind="action" name="cameraButton:"/>
+                <relationship kind="action" name="movePhoneDown:"/>
+                <relationship kind="action" name="movePhoneUp:"/>
+                <relationship kind="action" name="retractKeyBoard:"/>
+                <relationship kind="action" name="uploadButton:"/>
+                <relationship kind="outlet" name="age" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="buttonHide" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="cameraImage" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="ema" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="nam" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+        <class className="CreateViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/CreateViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="retractKeyBoard:"/>
+                <relationship kind="action" name="saveButton:"/>
+                <relationship kind="outlet" name="add" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="cit" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="cou" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="ema" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="nam" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="pho" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="pos" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="pro" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="pwd" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="ver" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+        <class className="InfoViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/InfoViewController.h"/>
+        </class>
+        <class className="LoginViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/LoginViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="loginButton:"/>
+                <relationship kind="action" name="movePadDown:"/>
+                <relationship kind="action" name="movePadUp:"/>
+                <relationship kind="action" name="movePhoneDown:"/>
+                <relationship kind="action" name="movePhoneUp:"/>
+                <relationship kind="action" name="retractKeyBoard:"/>
+                <relationship kind="outlet" name="bid" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="pwd" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+        <class className="MenuViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MenuViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="accountButton:"/>
+                <relationship kind="action" name="cameraButton:"/>
+                <relationship kind="action" name="gotoWebsite:"/>
+                <relationship kind="outlet" name="actInd" candidateClass="UIActivityIndicatorView"/>
+            </relationships>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="PictureViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/PictureViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="backButton:"/>
+                <relationship kind="action" name="selectButton:"/>
+                <relationship kind="action" name="uploadButton:"/>
+                <relationship kind="outlet" name="adImage" candidateClass="UIImageView"/>
+            </relationships>
+        </class>
+        <class className="VideoViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/VideoViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="backButton:"/>
+                <relationship kind="action" name="retractKeyBoard:"/>
+                <relationship kind="action" name="uploadButton:"/>
+                <relationship kind="outlet" name="url" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+        <class className="ViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="tapGesture:"/>
+            </relationships>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="P3b-xh-J4j"/>
-        <segue reference="b4U-73-BNc"/>
         <segue reference="6bo-2g-928"/>
+        <segue reference="P3b-xh-J4j"/>
+        <segue reference="0xM-7X-S3I"/>
     </inferredMetricsTieBreakers>
 </document>
