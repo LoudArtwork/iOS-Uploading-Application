@@ -32,6 +32,7 @@
 		E776486E1690A9E90074E911 /* logopad.png in Resources */ = {isa = PBXBuildFile; fileRef = E76EF6DC166154D00056BF60 /* logopad.png */; };
 		E776486F1690A9EA0074E911 /* logopadretina.png in Resources */ = {isa = PBXBuildFile; fileRef = E76EF6DE166154D40056BF60 /* logopadretina.png */; };
 		E777786D1672512700C6BC08 /* InfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E777786C1672512700C6BC08 /* InfoViewController.m */; };
+		E78816051691D7A600969C4A /* CurrentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E78816041691D7A600969C4A /* CurrentViewController.m */; };
 		E7A635B016689B57009E4031 /* AccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7A635AF16689B57009E4031 /* AccountViewController.m */; };
 		E7CECDCE167049F200420B3B /* CreateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7CECDCD167049F200420B3B /* CreateViewController.m */; };
 /* End PBXBuildFile section */
@@ -72,6 +73,8 @@
 		E776486A1690A9D60074E911 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = ../Default.png; sourceTree = "<group>"; };
 		E777786B1672512700C6BC08 /* InfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoViewController.h; sourceTree = "<group>"; };
 		E777786C1672512700C6BC08 /* InfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoViewController.m; sourceTree = "<group>"; };
+		E78816031691D7A600969C4A /* CurrentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CurrentViewController.h; sourceTree = "<group>"; };
+		E78816041691D7A600969C4A /* CurrentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CurrentViewController.m; sourceTree = "<group>"; };
 		E7A635AE16689B57009E4031 /* AccountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountViewController.h; sourceTree = "<group>"; };
 		E7A635AF16689B57009E4031 /* AccountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountViewController.m; sourceTree = "<group>"; };
 		E7CECDCC167049F200420B3B /* CreateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateViewController.h; sourceTree = "<group>"; };
@@ -187,6 +190,8 @@
 				E7425338167528B8004C9AC3 /* PictureViewController.m */,
 				E742533B167528C1004C9AC3 /* VideoViewController.h */,
 				E742533C167528C1004C9AC3 /* VideoViewController.m */,
+				E78816031691D7A600969C4A /* CurrentViewController.h */,
+				E78816041691D7A600969C4A /* CurrentViewController.m */,
 			);
 			name = GUI;
 			sourceTree = "<group>";
@@ -274,6 +279,7 @@
 				E777786D1672512700C6BC08 /* InfoViewController.m in Sources */,
 				E7425339167528B8004C9AC3 /* PictureViewController.m in Sources */,
 				E742533D167528C1004C9AC3 /* VideoViewController.m in Sources */,
+				E78816051691D7A600969C4A /* CurrentViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

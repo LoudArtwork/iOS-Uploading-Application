@@ -1,6 +1,6 @@
 <?php
     $start = ' <img src="http://www.loudartwork.com/ads/';
-    $end   = '" alt="" />';
+    $end   = '" alt="" width="420" height="315" />';
     $guts  = $_POST['gut'];
     
     $ad = $start.$guts.$end;

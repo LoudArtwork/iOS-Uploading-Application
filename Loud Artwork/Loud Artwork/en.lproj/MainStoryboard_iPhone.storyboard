@@ -320,7 +320,6 @@
                                     <constraint firstItem="kSS-KX-yjO" firstAttribute="top" secondItem="Gfi-G1-gPh" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="Ps4-aq-brI"/>
                                     <constraint firstItem="jlF-on-7l7" firstAttribute="top" secondItem="xxj-IL-uXz" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="UXa-fC-LR1"/>
                                     <constraint firstItem="NJb-bs-Uek" firstAttribute="top" secondItem="CiP-sB-xrY" secondAttribute="top" type="default" id="Wua-aW-mjj"/>
-                                    <constraint firstItem="NJb-bs-Uek" firstAttribute="centerX" secondItem="CiP-sB-xrY" secondAttribute="centerX" type="default" id="XKA-CM-gLV"/>
                                     <constraint firstItem="kSS-KX-yjO" firstAttribute="centerX" secondItem="NJb-bs-Uek" secondAttribute="centerX" type="default" id="aRy-bB-7sR"/>
                                     <constraint firstAttribute="trailing" secondItem="NJb-bs-Uek" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="hRQ-zs-1L3"/>
                                     <constraint firstItem="NJb-bs-Uek" firstAttribute="leading" secondItem="CiP-sB-xrY" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="hWl-8K-O5K"/>
@@ -328,6 +327,7 @@
                                     <constraint firstAttribute="trailing" secondItem="Gfi-G1-gPh" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="mSb-rG-OWS"/>
                                     <constraint firstAttribute="bottom" secondItem="jlF-on-7l7" secondAttribute="bottom" constant="9" id="t2Y-rL-XjW"/>
                                     <constraint firstItem="Gfi-G1-gPh" firstAttribute="leading" secondItem="CiP-sB-xrY" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="thb-tB-81W"/>
+                                    <constraint firstItem="kSS-KX-yjO" firstAttribute="centerX" secondItem="CiP-sB-xrY" secondAttribute="centerX" type="default" id="xRC-eA-Bp5"/>
                                 </constraints>
                             </scrollView>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v0V-NN-OsD">
@@ -418,7 +418,7 @@
             <objects>
                 <tableViewController id="vB4-bi-yQf" customClass="AccountViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="singleLineEtched" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="jNs-tu-yZq">
-                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <button key="tableHeaderView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ZDK-cp-wEz">
@@ -1231,7 +1231,7 @@ the courts of the Province of Ontario.</string>
             <objects>
                 <viewController id="HLs-Er-dFd" customClass="InfoViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VYl-Ii-sTq">
-                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="411"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EO0-PQ-Z1c">
@@ -1330,7 +1330,7 @@ www.loudartwork.com</string>
                                             <action selector="retractKeyBoard:" destination="9ZH-ex-l5C" eventType="editingDidEndOnExit" id="8TT-ff-NT4"/>
                                         </connections>
                                     </textField>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Enter the Youtube URL" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wqg-GZ-AcS">
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Enter the Youtube video code" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wqg-GZ-AcS">
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
@@ -1340,9 +1340,9 @@ www.loudartwork.com</string>
                                     <constraint firstItem="l74-e2-H2C" firstAttribute="top" secondItem="gvU-Oh-GCW" secondAttribute="top" constant="169" id="Emd-01-ipi"/>
                                     <constraint firstAttribute="bottom" secondItem="l74-e2-H2C" secondAttribute="bottom" constant="168" id="JaH-Ma-Syi"/>
                                     <constraint firstItem="wqg-GZ-AcS" firstAttribute="leading" secondItem="gvU-Oh-GCW" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="RK2-4L-gJ3"/>
-                                    <constraint firstItem="wqg-GZ-AcS" firstAttribute="centerX" secondItem="gvU-Oh-GCW" secondAttribute="centerX" type="default" id="Xbj-f0-HJi"/>
+                                    <constraint firstItem="wqg-GZ-AcS" firstAttribute="top" secondItem="gvU-Oh-GCW" secondAttribute="top" constant="34" id="bCV-iZ-jnp"/>
                                     <constraint firstAttribute="trailing" secondItem="l74-e2-H2C" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="bg0-u4-Osc"/>
-                                    <constraint firstItem="wqg-GZ-AcS" firstAttribute="top" secondItem="gvU-Oh-GCW" secondAttribute="top" constant="106" id="dUV-pm-eky"/>
+                                    <constraint firstItem="wqg-GZ-AcS" firstAttribute="centerX" secondItem="gvU-Oh-GCW" secondAttribute="centerX" type="default" id="gAw-k1-EVG"/>
                                     <constraint firstItem="l74-e2-H2C" firstAttribute="leading" secondItem="gvU-Oh-GCW" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="jq5-b3-bJ8"/>
                                     <constraint firstAttribute="trailing" secondItem="wqg-GZ-AcS" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="mtf-CX-Zhq"/>
                                 </constraints>
@@ -1484,129 +1484,71 @@ www.loudartwork.com</string>
                     <connections>
                         <segue destination="iaf-vC-Fge" kind="relationship" relationship="viewControllers" id="ZcL-EW-fol"/>
                         <segue destination="9ZH-ex-l5C" kind="relationship" relationship="viewControllers" id="MDe-rt-yoY"/>
+                        <segue destination="wQO-1A-UYk" kind="relationship" relationship="viewControllers" id="EZR-hq-oWS"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lQr-Yc-lUR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3345" y="447"/>
+            <point key="canvasLocation" x="2901" y="435"/>
+        </scene>
+        <!--Current View Controller - Current-->
+        <scene sceneID="LST-h4-RH3">
+            <objects>
+                <viewController id="wQO-1A-UYk" customClass="CurrentViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hXj-SD-jqo">
+                        <rect key="frame" x="0.0" y="20" width="320" height="411"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="spw-e2-xjK">
+                                <items>
+                                    <navigationItem title="Current Ad" id="g5w-ne-YJR">
+                                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="7MD-Hh-KCh">
+                                            <connections>
+                                                <action selector="backButton:" destination="wQO-1A-UYk" id="NFw-HF-6cR"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BeK-26-awm">
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.87843143940000001" green="0.94901967050000002" blue="0.98039221759999995" alpha="1" colorSpace="deviceRGB"/>
+                        <constraints>
+                            <constraint firstItem="BeK-26-awm" firstAttribute="top" secondItem="spw-e2-xjK" secondAttribute="bottom" type="default" id="9bk-cU-O9B"/>
+                            <constraint firstItem="BeK-26-awm" firstAttribute="leading" secondItem="hXj-SD-jqo" secondAttribute="leading" type="default" id="CXS-bs-r4F"/>
+                            <constraint firstItem="BeK-26-awm" firstAttribute="bottom" secondItem="hXj-SD-jqo" secondAttribute="bottom" type="default" id="INR-am-j8t"/>
+                            <constraint firstItem="spw-e2-xjK" firstAttribute="top" secondItem="hXj-SD-jqo" secondAttribute="top" type="default" id="WPS-US-PUN"/>
+                            <constraint firstItem="spw-e2-xjK" firstAttribute="trailing" secondItem="hXj-SD-jqo" secondAttribute="trailing" type="default" id="aqZ-B4-LLI"/>
+                            <constraint firstItem="spw-e2-xjK" firstAttribute="leading" secondItem="hXj-SD-jqo" secondAttribute="leading" type="default" id="f6r-ye-AUQ"/>
+                            <constraint firstItem="BeK-26-awm" firstAttribute="trailing" secondItem="hXj-SD-jqo" secondAttribute="trailing" type="default" id="tQ7-Yw-er5"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Current" id="a2o-Gf-KBi"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="myWebView" destination="BeK-26-awm" id="k6X-qz-6Ol"/>
+                        <segue destination="Bkn-Jn-nj2" kind="modal" identifier="CurrentToAccount" id="jQ8-No-zJG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vPj-9q-MdU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3345" y="425"/>
         </scene>
     </scenes>
     <resources>
         <image name="officiallogo.png" width="1200" height="1200"/>
     </resources>
-    <classes>
-        <class className="AccountViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/AccountViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="logOut:"/>
-                <relationship kind="action" name="retractKeyBoard:"/>
-                <relationship kind="action" name="saveButton:"/>
-                <relationship kind="action" name="uploadAd:"/>
-                <relationship kind="outlet" name="add" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="bid" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="city" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="cou" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="ema" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="nam" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="pho" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="pos" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="pro" candidateClass="UITextField"/>
-            </relationships>
-        </class>
-        <class className="CameraViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/CameraViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="backButton:"/>
-                <relationship kind="action" name="cameraButton:"/>
-                <relationship kind="action" name="movePhoneDown:"/>
-                <relationship kind="action" name="movePhoneUp:"/>
-                <relationship kind="action" name="retractKeyBoard:"/>
-                <relationship kind="action" name="uploadButton:"/>
-                <relationship kind="outlet" name="actInd" candidateClass="UIActivityIndicatorView"/>
-                <relationship kind="outlet" name="age" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="buttonHide" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="cameraImage" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="ema" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="nam" candidateClass="UITextField"/>
-            </relationships>
-        </class>
-        <class className="CreateViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/CreateViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="retractKeyBoard:"/>
-                <relationship kind="action" name="saveButton:"/>
-                <relationship kind="outlet" name="add" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="cit" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="cou" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="ema" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="nam" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="pho" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="pos" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="pro" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="pwd" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="ver" candidateClass="UITextField"/>
-            </relationships>
-        </class>
-        <class className="InfoViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/InfoViewController.h"/>
-        </class>
-        <class className="LoginViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/LoginViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="loginButton:"/>
-                <relationship kind="action" name="movePadDown:"/>
-                <relationship kind="action" name="movePadUp:"/>
-                <relationship kind="action" name="movePhoneDown:"/>
-                <relationship kind="action" name="movePhoneUp:"/>
-                <relationship kind="action" name="retractKeyBoard:"/>
-                <relationship kind="outlet" name="bid" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="pwd" candidateClass="UITextField"/>
-            </relationships>
-        </class>
-        <class className="MenuViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/MenuViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="accountButton:"/>
-                <relationship kind="action" name="cameraButton:"/>
-                <relationship kind="action" name="gotoWebsite:"/>
-            </relationships>
-        </class>
-        <class className="NSLayoutConstraint" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
-        </class>
-        <class className="PictureViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/PictureViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="backButton:"/>
-                <relationship kind="action" name="selectButton:"/>
-                <relationship kind="action" name="uploadButton:"/>
-                <relationship kind="outlet" name="adImage" candidateClass="UIImageView"/>
-            </relationships>
-        </class>
-        <class className="VideoViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/VideoViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="backButton:"/>
-                <relationship kind="action" name="retractKeyBoard:"/>
-                <relationship kind="action" name="uploadButton:"/>
-                <relationship kind="outlet" name="url" candidateClass="UITextField"/>
-            </relationships>
-        </class>
-        <class className="ViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="tapGesture:"/>
-            </relationships>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
+        <segue reference="jQ8-No-zJG"/>
+        <segue reference="acq-qp-5zF"/>
         <segue reference="6bo-2g-928"/>
-        <segue reference="S6b-2Y-cJz"/>
-        <segue reference="0xM-7X-S3I"/>
     </inferredMetricsTieBreakers>
 </document>
