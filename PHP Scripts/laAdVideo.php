@@ -1,6 +1,7 @@
 <?php
-    $start = '<iframe width="420" height="315" src="http://';
+    $start = '<iframe width="420" height="315" src="http://www.youtube.com/embed/';
     $end   = '" frameborder="0" allowfullscreen></iframe>';
+    
     $guts  = $_POST['gut'];
     
     $ad = $start.$guts.$end;
@@ -23,4 +24,4 @@
     echo "please work";
     
     mysql_close($con);
-    ?>
+?>

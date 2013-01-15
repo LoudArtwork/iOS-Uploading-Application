@@ -18,6 +18,8 @@
 - (IBAction)cameraButton:(id)sender;
 - (IBAction)movePhoneUp:(id)sender;
 - (IBAction)movePhoneDown:(id)sender;
+- (IBAction)movePadUp:(id)sender;
+- (IBAction)movePadDown:(id)sender;
 
 @property (weak, nonatomic) IBOutlet UIImageView *cameraImage;
 @property (weak, nonatomic) IBOutlet UITextField *nam;

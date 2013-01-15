@@ -56,7 +56,7 @@
         NSLog(@"got business id: %@", bid);
         // ---------- Get Business ID ---------- //
         
-        // ---------- Login ---------- //
+        // ---------- Add video to Database ---------- //
         NSString *post = [NSString stringWithFormat:@"bid=%@&gut=%@", bid, self.url.text];
         NSData *postData = [post dataUsingEncoding:NSASCIIStringEncoding allowLossyConversion:YES];
         NSString *postLength = [NSString stringWithFormat:@"%d", [postData length]];
@@ -73,7 +73,7 @@
         NSData *returnData = [NSURLConnection sendSynchronousRequest:request returningResponse:nil error:nil];
         NSString *login = [[NSString alloc] initWithData:returnData encoding:NSUTF8StringEncoding];
         NSLog(@"login response: %@", login);
-        // ---------- Login ---------- //
+        // ---------- Add video to Database ---------- //
         
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Success!"
                                                         message:@"Your new advertisement has been uploaded!"

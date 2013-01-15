@@ -70,7 +70,7 @@
         NSLog(@"uploaded picture: %@", picture);
         // ---------- Upload Picture ---------- //
         
-        // ---------- Login ---------- //
+        // ---------- Add picture to Database ---------- //
         NSString *post = [NSString stringWithFormat:@"bid=%@&gut=%@", bid, picture];
         NSData *postData = [post dataUsingEncoding:NSASCIIStringEncoding allowLossyConversion:YES];
         NSString *postLength = [NSString stringWithFormat:@"%d", [postData length]];
@@ -87,7 +87,7 @@
         returnData = [NSURLConnection sendSynchronousRequest:request returningResponse:nil error:nil];
         NSString *login = [[NSString alloc] initWithData:returnData encoding:NSUTF8StringEncoding];
         NSLog(@"login response: %@", login);
-        // ---------- Login ---------- //
+        // ---------- Add picture to Database ---------- //
         
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Success!"
                                                         message:@"Your new advertisement has been uploaded!"

@@ -22,6 +22,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    if([NSString stringWithContentsOfURL:[NSURL URLWithString:@"http://www.google.com"]] != NULL) {
     NSString *bbid;
     // ---------- Get Business ID ---------- //
     NSString *docPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)objectAtIndex:0];
@@ -62,6 +63,14 @@
     self.pos.text = [NSString stringWithFormat:@"%@", [json objectForKey:@"pos"]];
     self.ema.text = [NSString stringWithFormat:@"%@", [json objectForKey:@"ema"]];
     self.pho.text = [NSString stringWithFormat:@"%@", [json objectForKey:@"pho"]];
+    } else {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Warning!"
+                                                        message:@"You are not connected to the internet!"
+                                                       delegate:nil
+                                              cancelButtonTitle:@"OK"
+                                              otherButtonTitles:nil];
+        [alert show];
+    }
 }
 
 - (void)didReceiveMemoryWarning {

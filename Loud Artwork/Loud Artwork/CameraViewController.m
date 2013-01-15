@@ -305,5 +305,63 @@
     
 }
 
+- (IBAction)movePadUp:(id)sender { // move screen up when keyboard is in use
+    [self animatePadField:self.nam up:YES];
+    [self animatePadField:self.age up:YES];
+    [self animatePadField:self.ema up:YES];
+}
+
+- (IBAction)movePadDown:(id)sender { // move screen down when keyboard is not in use
+    [self animatePadField:self.nam up:NO];
+    [self animatePadField:self.age up:NO];
+    [self animatePadField:self.ema up:NO];
+}
+
+- (void) animatePadField: (UITextField*) textField up: (BOOL) up {
+    int animatedDistance;
+    int moveUpValue = textField.frame.origin.y+ textField.frame.size.height;
+    UIInterfaceOrientation orientation =
+    [[UIApplication sharedApplication] statusBarOrientation];
+    if (orientation == UIInterfaceOrientationPortrait || orientation == UIInterfaceOrientationPortraitUpsideDown) {
+        animatedDistance = 50;
+        if(animatedDistance>0) {
+            const int movementDistance = animatedDistance;
+            const float movementDuration = 0.3f;
+            int movement = (up ? -movementDistance : movementDistance);
+            [UIView beginAnimations: nil context: nil];
+            [UIView setAnimationBeginsFromCurrentState: YES];
+            [UIView setAnimationDuration: movementDuration];
+            self.view.frame = CGRectOffset(self.view.frame, 0, movement);
+            [UIView commitAnimations];
+        }
+    } else if (orientation == UIInterfaceOrientationLandscapeLeft) {
+        animatedDistance = 90;
+        if(animatedDistance>0) {
+            const int movementDistance = animatedDistance;
+            const float movementDuration = 0.3f;
+            int movement = (up ? -movementDistance : movementDistance);
+            [UIView beginAnimations: nil context: nil];
+            [UIView setAnimationBeginsFromCurrentState: YES];
+            [UIView setAnimationDuration: movementDuration];
+            self.view.frame = CGRectOffset(self.view.frame, movement, 0);
+            [UIView commitAnimations];
+        }
+    } else if (orientation == UIInterfaceOrientationLandscapeRight) {
+        animatedDistance = 90;
+        if(animatedDistance>0) {
+            const int movementDistance = animatedDistance;
+            const float movementDuration = 0.3f;
+            int movement = (up ? movementDistance : -movementDistance);
+            [UIView beginAnimations: nil context: nil];
+            [UIView setAnimationBeginsFromCurrentState: YES];
+            [UIView setAnimationDuration: movementDuration];
+            self.view.frame = CGRectOffset(self.view.frame, movement, 0);
+            [UIView commitAnimations];
+        }
+    }
+    
+}
+
+
 
 @end
