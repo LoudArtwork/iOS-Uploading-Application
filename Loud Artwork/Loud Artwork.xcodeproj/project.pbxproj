@@ -7,205 +7,119 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E7425339167528B8004C9AC3 /* PictureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7425338167528B8004C9AC3 /* PictureViewController.m */; };
-		E742533D167528C1004C9AC3 /* VideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E742533C167528C1004C9AC3 /* VideoViewController.m */; };
-		E758B0D1165DEC220010C0CC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E758B0D0165DEC220010C0CC /* UIKit.framework */; };
-		E758B0D3165DEC220010C0CC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E758B0D2165DEC220010C0CC /* Foundation.framework */; };
-		E758B0D5165DEC220010C0CC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E758B0D4165DEC220010C0CC /* CoreGraphics.framework */; };
-		E758B0DB165DEC220010C0CC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E758B0D9165DEC220010C0CC /* InfoPlist.strings */; };
-		E758B0DD165DEC220010C0CC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E758B0DC165DEC220010C0CC /* main.m */; };
-		E758B0E1165DEC220010C0CC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E758B0E0165DEC220010C0CC /* AppDelegate.m */; };
-		E758B0EA165DEC220010C0CC /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E758B0E8165DEC220010C0CC /* MainStoryboard_iPhone.storyboard */; };
-		E758B0ED165DEC220010C0CC /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E758B0EB165DEC220010C0CC /* MainStoryboard_iPad.storyboard */; };
-		E758B0F0165DEC220010C0CC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E758B0EF165DEC220010C0CC /* ViewController.m */; };
-		E75FC7041664ADCE00048E67 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E75FC7031664ADCE00048E67 /* MenuViewController.m */; };
-		E75FC7071664AEFB00048E67 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E75FC7061664AEFB00048E67 /* libsqlite3.dylib */; };
-		E75FC70A1664B10600048E67 /* CameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E75FC7091664B10600048E67 /* CameraViewController.m */; };
-		E76EF6E1166154F30056BF60 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E76EF6E0166154F30056BF60 /* MobileCoreServices.framework */; };
-		E76EF6E91661594C0056BF60 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E76EF6E81661594C0056BF60 /* LoginViewController.m */; };
-		E76EF6EB166159B10056BF60 /* officiallogo.png in Resources */ = {isa = PBXBuildFile; fileRef = E76EF6EA166159B10056BF60 /* officiallogo.png */; };
-		E77648681690A9CE0074E911 /* logophone.png in Resources */ = {isa = PBXBuildFile; fileRef = E76EF6D8166154BA0056BF60 /* logophone.png */; };
-		E77648691690A9D00074E911 /* logophoneretina.png in Resources */ = {isa = PBXBuildFile; fileRef = E76EF6DA166154C70056BF60 /* logophoneretina.png */; };
-		E776486B1690A9D60074E911 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = E776486A1690A9D60074E911 /* Default.png */; };
-		E776486C1690A9DF0074E911 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E7EE91D81675219700687D04 /* Default@2x.png */; };
-		E776486D1690A9E30074E911 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E7EE91D61675218500687D04 /* Default-568h@2x.png */; };
-		E776486E1690A9E90074E911 /* logopad.png in Resources */ = {isa = PBXBuildFile; fileRef = E76EF6DC166154D00056BF60 /* logopad.png */; };
-		E776486F1690A9EA0074E911 /* logopadretina.png in Resources */ = {isa = PBXBuildFile; fileRef = E76EF6DE166154D40056BF60 /* logopadretina.png */; };
-		E777786D1672512700C6BC08 /* InfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E777786C1672512700C6BC08 /* InfoViewController.m */; };
-		E78816051691D7A600969C4A /* CurrentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E78816041691D7A600969C4A /* CurrentViewController.m */; };
-		E7A635B016689B57009E4031 /* AccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7A635AF16689B57009E4031 /* AccountViewController.m */; };
-		E7CECDCE167049F200420B3B /* CreateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7CECDCD167049F200420B3B /* CreateViewController.m */; };
+		E7103B2716AB06130045477F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7103B2616AB06130045477F /* UIKit.framework */; };
+		E7103B2916AB06130045477F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7103B2816AB06130045477F /* Foundation.framework */; };
+		E7103B2B16AB06130045477F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7103B2A16AB06130045477F /* CoreGraphics.framework */; };
+		E7103B3116AB06130045477F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E7103B2F16AB06130045477F /* InfoPlist.strings */; };
+		E7103B3316AB06130045477F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E7103B3216AB06130045477F /* main.m */; };
+		E7103B3716AB06130045477F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E7103B3616AB06130045477F /* AppDelegate.m */; };
+		E7103B3916AB06130045477F /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = E7103B3816AB06130045477F /* Default.png */; };
+		E7103B3B16AB06130045477F /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E7103B3A16AB06130045477F /* Default@2x.png */; };
+		E7103B3D16AB06130045477F /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E7103B3C16AB06130045477F /* Default-568h@2x.png */; };
+		E7103B4016AB06130045477F /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7103B3E16AB06130045477F /* MainStoryboard_iPhone.storyboard */; };
+		E7103B4316AB06130045477F /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7103B4116AB06130045477F /* MainStoryboard_iPad.storyboard */; };
+		E7103B4616AB06130045477F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7103B4516AB06130045477F /* ViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		E7425337167528B8004C9AC3 /* PictureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PictureViewController.h; sourceTree = "<group>"; };
-		E7425338167528B8004C9AC3 /* PictureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PictureViewController.m; sourceTree = "<group>"; };
-		E742533B167528C1004C9AC3 /* VideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoViewController.h; sourceTree = "<group>"; };
-		E742533C167528C1004C9AC3 /* VideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoViewController.m; sourceTree = "<group>"; };
-		E758B0CC165DEC220010C0CC /* Loud Artwork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Loud Artwork.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		E758B0D0165DEC220010C0CC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		E758B0D2165DEC220010C0CC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		E758B0D4165DEC220010C0CC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		E758B0D8165DEC220010C0CC /* Loud Artwork-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Loud Artwork-Info.plist"; sourceTree = "<group>"; };
-		E758B0DA165DEC220010C0CC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		E758B0DC165DEC220010C0CC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		E758B0DE165DEC220010C0CC /* Loud Artwork-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Loud Artwork-Prefix.pch"; sourceTree = "<group>"; };
-		E758B0DF165DEC220010C0CC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		E758B0E0165DEC220010C0CC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		E758B0E2165DEC220010C0CC /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		E758B0E9165DEC220010C0CC /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
-		E758B0EC165DEC220010C0CC /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
-		E758B0EE165DEC220010C0CC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		E758B0EF165DEC220010C0CC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		E75FC7021664ADCE00048E67 /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
-		E75FC7031664ADCE00048E67 /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
-		E75FC7061664AEFB00048E67 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
-		E75FC7081664B10600048E67 /* CameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraViewController.h; sourceTree = "<group>"; };
-		E75FC7091664B10600048E67 /* CameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraViewController.m; sourceTree = "<group>"; };
-		E76EF6D8166154BA0056BF60 /* logophone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logophone.png; path = ../logophone.png; sourceTree = "<group>"; };
-		E76EF6DA166154C70056BF60 /* logophoneretina.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logophoneretina.png; path = ../logophoneretina.png; sourceTree = "<group>"; };
-		E76EF6DC166154D00056BF60 /* logopad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logopad.png; path = ../logopad.png; sourceTree = "<group>"; };
-		E76EF6DE166154D40056BF60 /* logopadretina.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logopadretina.png; path = ../logopadretina.png; sourceTree = "<group>"; };
-		E76EF6E0166154F30056BF60 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
-		E76EF6E71661594C0056BF60 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
-		E76EF6E81661594C0056BF60 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
-		E76EF6EA166159B10056BF60 /* officiallogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = officiallogo.png; sourceTree = "<group>"; };
-		E776486A1690A9D60074E911 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = ../Default.png; sourceTree = "<group>"; };
-		E777786B1672512700C6BC08 /* InfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoViewController.h; sourceTree = "<group>"; };
-		E777786C1672512700C6BC08 /* InfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoViewController.m; sourceTree = "<group>"; };
-		E78816031691D7A600969C4A /* CurrentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CurrentViewController.h; sourceTree = "<group>"; };
-		E78816041691D7A600969C4A /* CurrentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CurrentViewController.m; sourceTree = "<group>"; };
-		E7A635AE16689B57009E4031 /* AccountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountViewController.h; sourceTree = "<group>"; };
-		E7A635AF16689B57009E4031 /* AccountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountViewController.m; sourceTree = "<group>"; };
-		E7CECDCC167049F200420B3B /* CreateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateViewController.h; sourceTree = "<group>"; };
-		E7CECDCD167049F200420B3B /* CreateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateViewController.m; sourceTree = "<group>"; };
-		E7EE91D61675218500687D04 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../Default-568h@2x.png"; sourceTree = "<group>"; };
-		E7EE91D81675219700687D04 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "../Default@2x.png"; sourceTree = "<group>"; };
+		E7103B2216AB06130045477F /* Loud Artwork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Loud Artwork.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7103B2616AB06130045477F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		E7103B2816AB06130045477F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		E7103B2A16AB06130045477F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		E7103B2E16AB06130045477F /* Loud Artwork-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Loud Artwork-Info.plist"; sourceTree = "<group>"; };
+		E7103B3016AB06130045477F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E7103B3216AB06130045477F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E7103B3416AB06130045477F /* Loud Artwork-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Loud Artwork-Prefix.pch"; sourceTree = "<group>"; };
+		E7103B3516AB06130045477F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E7103B3616AB06130045477F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E7103B3816AB06130045477F /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		E7103B3A16AB06130045477F /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		E7103B3C16AB06130045477F /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		E7103B3F16AB06130045477F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		E7103B4216AB06130045477F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		E7103B4416AB06130045477F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		E7103B4516AB06130045477F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		E758B0C9165DEC220010C0CC /* Frameworks */ = {
+		E7103B1F16AB06130045477F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E75FC7071664AEFB00048E67 /* libsqlite3.dylib in Frameworks */,
-				E76EF6E1166154F30056BF60 /* MobileCoreServices.framework in Frameworks */,
-				E758B0D1165DEC220010C0CC /* UIKit.framework in Frameworks */,
-				E758B0D3165DEC220010C0CC /* Foundation.framework in Frameworks */,
-				E758B0D5165DEC220010C0CC /* CoreGraphics.framework in Frameworks */,
+				E7103B2716AB06130045477F /* UIKit.framework in Frameworks */,
+				E7103B2916AB06130045477F /* Foundation.framework in Frameworks */,
+				E7103B2B16AB06130045477F /* CoreGraphics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		E758B0C1165DEC220010C0CC = {
+		E7103B1716AB06130045477F = {
 			isa = PBXGroup;
 			children = (
-				E758B0D6165DEC220010C0CC /* Loud Artwork */,
-				E758B0CF165DEC220010C0CC /* Frameworks */,
-				E758B0CD165DEC220010C0CC /* Products */,
+				E7103B2C16AB06130045477F /* Loud Artwork */,
+				E7103B2516AB06130045477F /* Frameworks */,
+				E7103B2316AB06130045477F /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		E758B0CD165DEC220010C0CC /* Products */ = {
+		E7103B2316AB06130045477F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E758B0CC165DEC220010C0CC /* Loud Artwork.app */,
+				E7103B2216AB06130045477F /* Loud Artwork.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		E758B0CF165DEC220010C0CC /* Frameworks */ = {
+		E7103B2516AB06130045477F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				E75FC7061664AEFB00048E67 /* libsqlite3.dylib */,
-				E76EF6E0166154F30056BF60 /* MobileCoreServices.framework */,
-				E758B0D0165DEC220010C0CC /* UIKit.framework */,
-				E758B0D2165DEC220010C0CC /* Foundation.framework */,
-				E758B0D4165DEC220010C0CC /* CoreGraphics.framework */,
+				E7103B2616AB06130045477F /* UIKit.framework */,
+				E7103B2816AB06130045477F /* Foundation.framework */,
+				E7103B2A16AB06130045477F /* CoreGraphics.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		E758B0D6165DEC220010C0CC /* Loud Artwork */ = {
+		E7103B2C16AB06130045477F /* Loud Artwork */ = {
 			isa = PBXGroup;
 			children = (
-				E76EF6E5166155320056BF60 /* Pictures */,
-				E758B0DF165DEC220010C0CC /* AppDelegate.h */,
-				E758B0E0165DEC220010C0CC /* AppDelegate.m */,
-				E758B0E8165DEC220010C0CC /* MainStoryboard_iPhone.storyboard */,
-				E758B0EB165DEC220010C0CC /* MainStoryboard_iPad.storyboard */,
-				E76EF6E6166157F30056BF60 /* GUI */,
-				E758B0D7165DEC220010C0CC /* Supporting Files */,
+				E7103B3516AB06130045477F /* AppDelegate.h */,
+				E7103B3616AB06130045477F /* AppDelegate.m */,
+				E7103B3E16AB06130045477F /* MainStoryboard_iPhone.storyboard */,
+				E7103B4116AB06130045477F /* MainStoryboard_iPad.storyboard */,
+				E7103B4416AB06130045477F /* ViewController.h */,
+				E7103B4516AB06130045477F /* ViewController.m */,
+				E7103B2D16AB06130045477F /* Supporting Files */,
 			);
 			path = "Loud Artwork";
 			sourceTree = "<group>";
 		};
-		E758B0D7165DEC220010C0CC /* Supporting Files */ = {
+		E7103B2D16AB06130045477F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				E758B0D8165DEC220010C0CC /* Loud Artwork-Info.plist */,
-				E758B0D9165DEC220010C0CC /* InfoPlist.strings */,
-				E758B0DC165DEC220010C0CC /* main.m */,
-				E758B0DE165DEC220010C0CC /* Loud Artwork-Prefix.pch */,
-				E758B0E2165DEC220010C0CC /* Default.png */,
-				E7EE91D81675219700687D04 /* Default@2x.png */,
-				E7EE91D61675218500687D04 /* Default-568h@2x.png */,
+				E7103B2E16AB06130045477F /* Loud Artwork-Info.plist */,
+				E7103B2F16AB06130045477F /* InfoPlist.strings */,
+				E7103B3216AB06130045477F /* main.m */,
+				E7103B3416AB06130045477F /* Loud Artwork-Prefix.pch */,
+				E7103B3816AB06130045477F /* Default.png */,
+				E7103B3A16AB06130045477F /* Default@2x.png */,
+				E7103B3C16AB06130045477F /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		E76EF6E5166155320056BF60 /* Pictures */ = {
-			isa = PBXGroup;
-			children = (
-				E776486A1690A9D60074E911 /* Default.png */,
-				E76EF6EA166159B10056BF60 /* officiallogo.png */,
-				E76EF6D8166154BA0056BF60 /* logophone.png */,
-				E76EF6DA166154C70056BF60 /* logophoneretina.png */,
-				E76EF6DC166154D00056BF60 /* logopad.png */,
-				E76EF6DE166154D40056BF60 /* logopadretina.png */,
-			);
-			name = Pictures;
-			sourceTree = "<group>";
-		};
-		E76EF6E6166157F30056BF60 /* GUI */ = {
-			isa = PBXGroup;
-			children = (
-				E758B0EE165DEC220010C0CC /* ViewController.h */,
-				E758B0EF165DEC220010C0CC /* ViewController.m */,
-				E76EF6E71661594C0056BF60 /* LoginViewController.h */,
-				E76EF6E81661594C0056BF60 /* LoginViewController.m */,
-				E75FC7021664ADCE00048E67 /* MenuViewController.h */,
-				E75FC7031664ADCE00048E67 /* MenuViewController.m */,
-				E75FC7081664B10600048E67 /* CameraViewController.h */,
-				E75FC7091664B10600048E67 /* CameraViewController.m */,
-				E7A635AE16689B57009E4031 /* AccountViewController.h */,
-				E7A635AF16689B57009E4031 /* AccountViewController.m */,
-				E7CECDCC167049F200420B3B /* CreateViewController.h */,
-				E7CECDCD167049F200420B3B /* CreateViewController.m */,
-				E777786B1672512700C6BC08 /* InfoViewController.h */,
-				E777786C1672512700C6BC08 /* InfoViewController.m */,
-				E7425337167528B8004C9AC3 /* PictureViewController.h */,
-				E7425338167528B8004C9AC3 /* PictureViewController.m */,
-				E742533B167528C1004C9AC3 /* VideoViewController.h */,
-				E742533C167528C1004C9AC3 /* VideoViewController.m */,
-				E78816031691D7A600969C4A /* CurrentViewController.h */,
-				E78816041691D7A600969C4A /* CurrentViewController.m */,
-			);
-			name = GUI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		E758B0CB165DEC220010C0CC /* Loud Artwork */ = {
+		E7103B2116AB06130045477F /* Loud Artwork */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E758B0F3165DEC220010C0CC /* Build configuration list for PBXNativeTarget "Loud Artwork" */;
+			buildConfigurationList = E7103B4916AB06130045477F /* Build configuration list for PBXNativeTarget "Loud Artwork" */;
 			buildPhases = (
-				E758B0C8165DEC220010C0CC /* Sources */,
-				E758B0C9165DEC220010C0CC /* Frameworks */,
-				E758B0CA165DEC220010C0CC /* Resources */,
+				E7103B1E16AB06130045477F /* Sources */,
+				E7103B1F16AB06130045477F /* Frameworks */,
+				E7103B2016AB06130045477F /* Resources */,
 			);
 			buildRules = (
 			);
@@ -213,99 +127,85 @@
 			);
 			name = "Loud Artwork";
 			productName = "Loud Artwork";
-			productReference = E758B0CC165DEC220010C0CC /* Loud Artwork.app */;
+			productReference = E7103B2216AB06130045477F /* Loud Artwork.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		E758B0C3165DEC220010C0CC /* Project object */ = {
+		E7103B1916AB06130045477F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0450;
 				ORGANIZATIONNAME = "Loud Artwork";
 			};
-			buildConfigurationList = E758B0C6165DEC220010C0CC /* Build configuration list for PBXProject "Loud Artwork" */;
+			buildConfigurationList = E7103B1C16AB06130045477F /* Build configuration list for PBXProject "Loud Artwork" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = E758B0C1165DEC220010C0CC;
-			productRefGroup = E758B0CD165DEC220010C0CC /* Products */;
+			mainGroup = E7103B1716AB06130045477F;
+			productRefGroup = E7103B2316AB06130045477F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E758B0CB165DEC220010C0CC /* Loud Artwork */,
+				E7103B2116AB06130045477F /* Loud Artwork */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		E758B0CA165DEC220010C0CC /* Resources */ = {
+		E7103B2016AB06130045477F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E758B0DB165DEC220010C0CC /* InfoPlist.strings in Resources */,
-				E758B0EA165DEC220010C0CC /* MainStoryboard_iPhone.storyboard in Resources */,
-				E758B0ED165DEC220010C0CC /* MainStoryboard_iPad.storyboard in Resources */,
-				E76EF6EB166159B10056BF60 /* officiallogo.png in Resources */,
-				E77648681690A9CE0074E911 /* logophone.png in Resources */,
-				E77648691690A9D00074E911 /* logophoneretina.png in Resources */,
-				E776486B1690A9D60074E911 /* Default.png in Resources */,
-				E776486C1690A9DF0074E911 /* Default@2x.png in Resources */,
-				E776486D1690A9E30074E911 /* Default-568h@2x.png in Resources */,
-				E776486E1690A9E90074E911 /* logopad.png in Resources */,
-				E776486F1690A9EA0074E911 /* logopadretina.png in Resources */,
+				E7103B3116AB06130045477F /* InfoPlist.strings in Resources */,
+				E7103B3916AB06130045477F /* Default.png in Resources */,
+				E7103B3B16AB06130045477F /* Default@2x.png in Resources */,
+				E7103B3D16AB06130045477F /* Default-568h@2x.png in Resources */,
+				E7103B4016AB06130045477F /* MainStoryboard_iPhone.storyboard in Resources */,
+				E7103B4316AB06130045477F /* MainStoryboard_iPad.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		E758B0C8165DEC220010C0CC /* Sources */ = {
+		E7103B1E16AB06130045477F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E758B0DD165DEC220010C0CC /* main.m in Sources */,
-				E758B0E1165DEC220010C0CC /* AppDelegate.m in Sources */,
-				E758B0F0165DEC220010C0CC /* ViewController.m in Sources */,
-				E76EF6E91661594C0056BF60 /* LoginViewController.m in Sources */,
-				E75FC7041664ADCE00048E67 /* MenuViewController.m in Sources */,
-				E75FC70A1664B10600048E67 /* CameraViewController.m in Sources */,
-				E7A635B016689B57009E4031 /* AccountViewController.m in Sources */,
-				E7CECDCE167049F200420B3B /* CreateViewController.m in Sources */,
-				E777786D1672512700C6BC08 /* InfoViewController.m in Sources */,
-				E7425339167528B8004C9AC3 /* PictureViewController.m in Sources */,
-				E742533D167528C1004C9AC3 /* VideoViewController.m in Sources */,
-				E78816051691D7A600969C4A /* CurrentViewController.m in Sources */,
+				E7103B3316AB06130045477F /* main.m in Sources */,
+				E7103B3716AB06130045477F /* AppDelegate.m in Sources */,
+				E7103B4616AB06130045477F /* ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		E758B0D9165DEC220010C0CC /* InfoPlist.strings */ = {
+		E7103B2F16AB06130045477F /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				E758B0DA165DEC220010C0CC /* en */,
+				E7103B3016AB06130045477F /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		E758B0E8165DEC220010C0CC /* MainStoryboard_iPhone.storyboard */ = {
+		E7103B3E16AB06130045477F /* MainStoryboard_iPhone.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				E758B0E9165DEC220010C0CC /* en */,
+				E7103B3F16AB06130045477F /* en */,
 			);
 			name = MainStoryboard_iPhone.storyboard;
 			sourceTree = "<group>";
 		};
-		E758B0EB165DEC220010C0CC /* MainStoryboard_iPad.storyboard */ = {
+		E7103B4116AB06130045477F /* MainStoryboard_iPad.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				E758B0EC165DEC220010C0CC /* en */,
+				E7103B4216AB06130045477F /* en */,
 			);
 			name = MainStoryboard_iPad.storyboard;
 			sourceTree = "<group>";
@@ -313,7 +213,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		E758B0F1165DEC220010C0CC /* Debug */ = {
+		E7103B4716AB06130045477F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -342,7 +242,7 @@
 			};
 			name = Debug;
 		};
-		E758B0F2165DEC220010C0CC /* Release */ = {
+		E7103B4816AB06130045477F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -365,34 +265,24 @@
 			};
 			name = Release;
 		};
-		E758B0F4165DEC220010C0CC /* Debug */ = {
+		E7103B4A16AB06130045477F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Loud Artwork/Loud Artwork-Prefix.pch";
 				INFOPLIST_FILE = "Loud Artwork/Loud Artwork-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
-				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
 		};
-		E758B0F5165DEC220010C0CC /* Release */ = {
+		E7103B4B16AB06130045477F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Loud Artwork/Loud Artwork-Prefix.pch";
 				INFOPLIST_FILE = "Loud Artwork/Loud Artwork-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
-				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -400,25 +290,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		E758B0C6165DEC220010C0CC /* Build configuration list for PBXProject "Loud Artwork" */ = {
+		E7103B1C16AB06130045477F /* Build configuration list for PBXProject "Loud Artwork" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E758B0F1165DEC220010C0CC /* Debug */,
-				E758B0F2165DEC220010C0CC /* Release */,
+				E7103B4716AB06130045477F /* Debug */,
+				E7103B4816AB06130045477F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E758B0F3165DEC220010C0CC /* Build configuration list for PBXNativeTarget "Loud Artwork" */ = {
+		E7103B4916AB06130045477F /* Build configuration list for PBXNativeTarget "Loud Artwork" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E758B0F4165DEC220010C0CC /* Debug */,
-				E758B0F5165DEC220010C0CC /* Release */,
+				E7103B4A16AB06130045477F /* Debug */,
+				E7103B4B16AB06130045477F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = E758B0C3165DEC220010C0CC /* Project object */;
+	rootObject = E7103B1916AB06130045477F /* Project object */;
 }
