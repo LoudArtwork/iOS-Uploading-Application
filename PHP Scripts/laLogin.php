@@ -43,19 +43,19 @@
       function redeem() {
     
          // Check for required parameters
-         if (isset($_POST["bid"])&&isset($_POST["pwd"])) {
+         if (isset($_POST["ema"])&&isset($_POST["pwd"])) {
              
             // Put parameters into local variables
-            $bid = $_POST["bid"];
+            $ema = $_POST["ema"];
             $pwd = $_POST["pwd"];
-            $bbid = "fail";
+            $bid = "fail";
                 
             // Look up code in database
             $user_id = 0;
-            $stmt = $this->db->prepare('SELECT bid, active FROM la_business_info WHERE bid=? AND password=SHA1(?)');
-            $stmt->bind_param("ss", $bid, $pwd);
+            $stmt = $this->db->prepare('SELECT bid FROM la_business_info WHERE email=? AND password=SHA1(?)');
+            $stmt->bind_param("ss", $ema, $pwd);
             $stmt->execute();
-            $stmt->bind_result($bbid,$active);
+            $stmt->bind_result($bid);
             
             while ($stmt->fetch()) {
                break;
@@ -63,26 +63,9 @@
             
             $stmt->close();
              
-             if($bid == $bbid && $active == 1) {
-                 // Return unlock code, encoded with JSON
-                 $result = array("bid" => "1");
-                 sendResponse(200, json_encode($result));
-             } elseif($bid == $bbid && $active == 1) {
-                 // Return unlock code, encoded with JSON
-                 $result = array("bid" => "2");
-                 $result = array("2" => "This account is not active. Please contact our support!");
-                 sendResponse(201, json_encode($result));
-             } elseif($bid != $bbid) {
-                 // Return unlock code, encoded with JSON
-                 $result = array("bid" => "2");
-                 $result = array("2" => "This username and password do not match our system!");
-                 sendResponse(201, json_encode($result));
-             } else {
-                 // Return unlock code, encoded with JSON
-                 $result = array("bid" => "0");
-                 $result = array("2" => "An unknown error occured!");
-                 sendResponse(201, json_encode($result));
-             }
+             
+            $result = array("bid" => $bid);
+            sendResponse(200, json_encode($result));
              
             return true;
          }
