@@ -58,16 +58,16 @@
         NSLog(@"Login View Controller: Got user BID %@", bid);
         // ---------- Check Business in Database ---------- //
         
-        if([bid isEqualToString:@"1"]) {
-            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error!"
-                                                            message:@"An unknown error occured please contact support!"
+        if([bid isEqualToString:@"0"]) {
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Warning!"
+                                                            message:@"Your password or username are incorrect!"
                                                            delegate:nil
                                                   cancelButtonTitle:@"OK"
                                                   otherButtonTitles:nil];
             [alert show];
         } else {
             // ---------- Save Business ID to file ---------- //
-            NSString *resultLine = [NSString stringWithFormat:@"%@\n",self.ema.text];
+            NSString *resultLine = [NSString stringWithFormat:@"%@\n",bid];
             NSString *docPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)objectAtIndex:0];
             NSString *surveys = [docPath stringByAppendingPathComponent:@"account.csv"];
             
@@ -93,7 +93,7 @@
         }
     } else {
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Warning!"
-                                                        message:@"Your password or username are incorrect!"
+                                                        message:@"You are not connected to the internet!"
                                                        delegate:nil
                                               cancelButtonTitle:@"OK"
                                               otherButtonTitles:nil];
