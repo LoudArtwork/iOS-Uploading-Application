@@ -31,6 +31,7 @@
 		E771787616C6CBF90028CF21 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = E771787516C6CBF90028CF21 /* Default.png */; };
 		E771787816C6CC000028CF21 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E771787716C6CC000028CF21 /* Default@2x.png */; };
 		E771787A16C6CC080028CF21 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E771787916C6CC080028CF21 /* Default-568h@2x.png */; };
+		E792580216D7F0A400ED7522 /* AccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E792580116D7F0A400ED7522 /* AccountViewController.m */; };
 		E7BA2E4916D2A36F0005DE6F /* CreateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7BA2E4816D2A36F0005DE6F /* CreateViewController.m */; };
 		E7BA2E4C16D2A3810005DE6F /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7BA2E4B16D2A3810005DE6F /* LoginViewController.m */; };
 		E7BA2E4F16D2A61D0005DE6F /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7BA2E4E16D2A61D0005DE6F /* StoreKit.framework */; };
@@ -72,6 +73,8 @@
 		E771787516C6CBF90028CF21 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		E771787716C6CC000028CF21 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		E771787916C6CC080028CF21 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		E792580016D7F0A400ED7522 /* AccountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountViewController.h; sourceTree = "<group>"; };
+		E792580116D7F0A400ED7522 /* AccountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountViewController.m; sourceTree = "<group>"; };
 		E7BA2E4716D2A36F0005DE6F /* CreateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateViewController.h; sourceTree = "<group>"; };
 		E7BA2E4816D2A36F0005DE6F /* CreateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateViewController.m; sourceTree = "<group>"; };
 		E7BA2E4A16D2A3810005DE6F /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
@@ -118,6 +121,8 @@
 				E7460E0D16D4A1CE00DC6040 /* MenuViewController.m */,
 				E704951C16D566AC00050C42 /* CameraViewController.h */,
 				E704951D16D566AC00050C42 /* CameraViewController.m */,
+				E792580016D7F0A400ED7522 /* AccountViewController.h */,
+				E792580116D7F0A400ED7522 /* AccountViewController.m */,
 			);
 			name = GUI;
 			sourceTree = "<group>";
@@ -284,6 +289,7 @@
 				E7BA2E5516D2A70F0005DE6F /* ArtworkIAPHelper.m in Sources */,
 				E7460E0E16D4A1CE00DC6040 /* MenuViewController.m in Sources */,
 				E704951E16D566AC00050C42 /* CameraViewController.m in Sources */,
+				E792580216D7F0A400ED7522 /* AccountViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -38,6 +38,14 @@
 }
 
 - (IBAction)signIn:(id)sender {
+    [self.activityIndicator startAnimating];
+    [self performSelector: @selector(signinMethod)
+           withObject: nil
+           afterDelay: 0];
+    return;
+}
+
+- (void) signinMethod {
     if([NSString stringWithContentsOfURL:[NSURL URLWithString:@"http://www.google.com"]] != NULL) {
         // ---------- Check Business in Database ---------- //
         NSString *post = [NSString stringWithFormat:@"ema=%@&pwd=%@",self.ema.text,self.pwd.text];

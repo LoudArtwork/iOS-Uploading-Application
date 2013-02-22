@@ -23,6 +23,14 @@
 }
 
 - (IBAction)signIn:(id)sender {
+    [self.activityIndicator startAnimating];
+    [self performSelector: @selector(checkMethod)
+           withObject: nil
+           afterDelay: 0];
+    return;
+}
+
+- (void) checkMethod {
     NSLog(@"Initial View Controller: User has started the app");
     // ---------- Check to see if business is already logged in ----------
     NSString *docPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)objectAtIndex:0];

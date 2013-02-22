@@ -12,4 +12,6 @@
 
 - (IBAction)signIn:(id)sender;
 
+@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *activityIndicator;
+
 @end

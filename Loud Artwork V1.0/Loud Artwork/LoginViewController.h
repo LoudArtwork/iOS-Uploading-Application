@@ -12,6 +12,7 @@
 
 @property (weak, nonatomic) IBOutlet UITextField *ema;
 @property (weak, nonatomic) IBOutlet UITextField *pwd;
+@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *activityIndicator;
 
 - (IBAction)signIn:(id)sender;
 - (IBAction)forgotID:(id)sender;
