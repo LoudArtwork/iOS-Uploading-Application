@@ -12,6 +12,7 @@
 		E7460E0E16D4A1CE00DC6040 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7460E0D16D4A1CE00DC6040 /* MenuViewController.m */; };
 		E7632F7F16CFE20C008832A6 /* LegalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7632F7E16CFE20C008832A6 /* LegalViewController.m */; };
 		E76EF95E16D6ACBF00C8934C /* officiallogo.png in Resources */ = {isa = PBXBuildFile; fileRef = E76EF95D16D6ACBF00C8934C /* officiallogo.png */; };
+		E770B7A316D80E34004F2069 /* UploadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E770B7A216D80E34004F2069 /* UploadViewController.m */; };
 		E771784816C6CA070028CF21 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E771784716C6CA070028CF21 /* UIKit.framework */; };
 		E771784A16C6CA070028CF21 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E771784916C6CA070028CF21 /* Foundation.framework */; };
 		E771784C16C6CA070028CF21 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E771784B16C6CA070028CF21 /* CoreGraphics.framework */; };
@@ -49,6 +50,8 @@
 		E7632F7D16CFE20C008832A6 /* LegalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LegalViewController.h; sourceTree = "<group>"; };
 		E7632F7E16CFE20C008832A6 /* LegalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LegalViewController.m; sourceTree = "<group>"; };
 		E76EF95D16D6ACBF00C8934C /* officiallogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = officiallogo.png; sourceTree = "<group>"; };
+		E770B7A116D80E34004F2069 /* UploadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UploadViewController.h; sourceTree = "<group>"; };
+		E770B7A216D80E34004F2069 /* UploadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UploadViewController.m; sourceTree = "<group>"; };
 		E771784316C6CA070028CF21 /* Loud Artwork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Loud Artwork.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E771784716C6CA070028CF21 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		E771784916C6CA070028CF21 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -123,6 +126,8 @@
 				E704951D16D566AC00050C42 /* CameraViewController.m */,
 				E792580016D7F0A400ED7522 /* AccountViewController.h */,
 				E792580116D7F0A400ED7522 /* AccountViewController.m */,
+				E770B7A116D80E34004F2069 /* UploadViewController.h */,
+				E770B7A216D80E34004F2069 /* UploadViewController.m */,
 			);
 			name = GUI;
 			sourceTree = "<group>";
@@ -290,6 +295,7 @@
 				E7460E0E16D4A1CE00DC6040 /* MenuViewController.m in Sources */,
 				E704951E16D566AC00050C42 /* CameraViewController.m in Sources */,
 				E792580216D7F0A400ED7522 /* AccountViewController.m in Sources */,
+				E770B7A316D80E34004F2069 /* UploadViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

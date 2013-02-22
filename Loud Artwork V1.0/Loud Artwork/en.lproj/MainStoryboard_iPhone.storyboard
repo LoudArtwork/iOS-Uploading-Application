@@ -213,7 +213,7 @@
             <objects>
                 <tableViewController id="O5A-Re-uM3" customClass="MenuViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="singleLineEtched" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="bGP-kK-6GS">
-                        <rect key="frame" x="0.0" y="64" width="320" height="372"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="372"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.87843143940000001" green="0.94901967050000002" blue="0.98039221759999995" alpha="1" colorSpace="deviceRGB"/>
                         <sections>
@@ -841,7 +841,7 @@
             <objects>
                 <tableViewController id="Rrt-je-eyF" customClass="CameraViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="WWa-Ii-FxK">
-                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.87843143940000001" green="0.94901967050000002" blue="0.98039221759999995" alpha="1" colorSpace="deviceRGB"/>
                         <sections>
@@ -983,7 +983,7 @@
             <objects>
                 <tableViewController id="1Al-gE-zbN" customClass="AccountViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="singleLineEtched" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="N1V-ac-rjT">
-                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.87843143940000001" green="0.94901967050000002" blue="0.98039221759999995" alpha="1" colorSpace="deviceRGB"/>
                         <sections>
@@ -1403,10 +1403,10 @@
             </objects>
             <point key="canvasLocation" x="3259" y="-731"/>
         </scene>
-        <!--Table View Controller - Upload Picture-->
+        <!--Upload View Controller - Upload Picture-->
         <scene sceneID="Idt-8L-HRE">
             <objects>
-                <tableViewController id="cEe-Po-GuG" sceneMemberID="viewController">
+                <tableViewController id="cEe-Po-GuG" customClass="UploadViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="PCs-vt-x6O">
                         <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1453,10 +1453,21 @@
                         </sections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Upload Picture" id="TMD-8z-GU8">
-                        <barButtonItem key="leftBarButtonItem" title="Close" id="eOT-bM-CRB"/>
-                        <barButtonItem key="rightBarButtonItem" title="Upload" id="2ol-Ls-qwc"/>
+                        <barButtonItem key="leftBarButtonItem" title="Close" id="eOT-bM-CRB">
+                            <connections>
+                                <action selector="closeButton:" destination="cEe-Po-GuG" id="0UZ-lb-pCq"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Upload" id="2ol-Ls-qwc">
+                            <connections>
+                                <action selector="uploadButton:" destination="cEe-Po-GuG" id="9ED-sZ-EEE"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="adImage" destination="LdT-9y-mal" id="OGr-5j-re1"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pXB-6L-ciI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
