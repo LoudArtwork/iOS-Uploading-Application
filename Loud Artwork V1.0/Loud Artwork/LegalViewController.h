@@ -11,6 +11,7 @@
 @interface LegalViewController : UIViewController
 
 @property (weak, nonatomic) IBOutlet UIWebView *webTerms;
+
 - (IBAction)closeButton:(id)sender;
 
 @end

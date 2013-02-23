@@ -11,6 +11,7 @@
 @interface CopyrightViewController : UIViewController
 
 @property (weak, nonatomic) IBOutlet UIWebView *webCopy;
+
 - (IBAction)closeButton:(id)sender;
 
 @end

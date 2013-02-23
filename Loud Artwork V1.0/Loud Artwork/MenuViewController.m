@@ -105,7 +105,7 @@
     } else if (section == 1 && row == 0) {
         if([NSString stringWithContentsOfURL:[NSURL URLWithString:@"http://www.google.com"]] != NULL) {
             NSLog(@"Menu View Controller: User selected upload ad");
-            [self performSegueWithIdentifier:@"MenuToUpload" sender:self];
+            [self performSegueWithIdentifier:@"MenuToBronze" sender:self];
         } else {
             UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Warning!"
                                                             message:@"You are not connected to the internet!"
@@ -118,7 +118,7 @@
     } else if (section == 1 && row == 1) {
         if([NSString stringWithContentsOfURL:[NSURL URLWithString:@"http://www.google.com"]] != NULL) {
             NSLog(@"Menu View Controller: User selected view current ad");
-            [self performSegueWithIdentifier:@"MenuToCurrent" sender:self];
+            [self performSegueWithIdentifier:@"MenuToAd" sender:self];
         } else {
             UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Warning!"
                                                             message:@"You are not connected to the internet!"

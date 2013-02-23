@@ -113,7 +113,6 @@
                                   cancelButtonTitle:@"OK"
                                   otherButtonTitles:nil];
             [alert show];
-            
             [self performSegueWithIdentifier:@"AccountToAccount" sender:self];
         }
     } else {
