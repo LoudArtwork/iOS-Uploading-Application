@@ -8,17 +8,16 @@
 
 #import "ArtworkIAPHelper.h"
 
-@implementation AccessIAPHelper
+@implementation ArtworkIAPHelper
 
-+ (AccessIAPHelper *)sharedInstance {
++ (ArtworkIAPHelper *)sharedInstance {
     static dispatch_once_t once;
-    static AccessIAPHelper * sharedInstance;
+    static ArtworkIAPHelper * sharedInstance;
     dispatch_once(&once, ^{
         NSSet * productIdentifiers = [NSSet setWithObjects:
                                       @"com.loudartwork.LoudArtwork.BronzeAccess",
                                       @"com.loudartwork.LoudArtwork.SilverAccess",
                                       @"com.loudartwork.LoudArtwork.GoldAccess",
-                                      @"com.loudartwork.LoudArtwork.PlatinumAccess",
                                       nil];
         sharedInstance = [[self alloc] initWithProductIdentifiers:productIdentifiers];
     });

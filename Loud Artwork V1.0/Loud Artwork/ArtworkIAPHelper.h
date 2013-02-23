@@ -8,8 +8,8 @@
 
 #import "IAPHelper.h"
 
-@interface AccessIAPHelper : IAPHelper
+@interface ArtworkIAPHelper : IAPHelper
 
-+ (AccessIAPHelper *)sharedInstance;
++ (ArtworkIAPHelper *)sharedInstance;
 
 @end

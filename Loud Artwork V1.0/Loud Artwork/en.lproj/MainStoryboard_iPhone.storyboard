@@ -37,14 +37,29 @@
                             <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="xAY-1Y-dYW">
                                 <color key="color" cocoaTouchSystemColor="darkTextColor"/>
                             </activityIndicatorView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c6L-6T-0GA">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="testIAP:" destination="boI-Cl-LKV" eventType="touchUpInside" id="ziu-yC-OXs"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.87843143940000001" green="0.94901967050000002" blue="0.98039221759999995" alpha="1" colorSpace="deviceRGB"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="eps-pM-CGR" secondAttribute="bottom" constant="78" id="6h8-AQ-HOQ"/>
                             <constraint firstItem="xAY-1Y-dYW" firstAttribute="centerX" secondItem="lfj-qc-kpA" secondAttribute="centerX" type="default" id="M8a-hU-Xvw"/>
+                            <constraint firstItem="c6L-6T-0GA" firstAttribute="bottom" secondItem="qj4-gq-GtY" secondAttribute="bottom" type="default" id="MVZ-wj-XKq"/>
                             <constraint firstItem="lfj-qc-kpA" firstAttribute="top" secondItem="qj4-gq-GtY" secondAttribute="top" constant="20" symbolic="YES" type="default" id="UDt-XG-Lqn"/>
                             <constraint firstItem="xAY-1Y-dYW" firstAttribute="centerX" secondItem="qj4-gq-GtY" secondAttribute="centerX" type="default" id="V0q-zg-Sb0"/>
                             <constraint firstItem="xAY-1Y-dYW" firstAttribute="centerX" secondItem="eps-pM-CGR" secondAttribute="centerX" type="default" id="XpY-PW-MYz"/>
+                            <constraint firstItem="c6L-6T-0GA" firstAttribute="trailing" secondItem="qj4-gq-GtY" secondAttribute="trailing" type="default" id="bTB-h6-7vm"/>
                             <constraint firstAttribute="bottom" secondItem="xAY-1Y-dYW" secondAttribute="bottom" constant="134" id="uI8-xM-Wmd"/>
                         </constraints>
                     </view>
