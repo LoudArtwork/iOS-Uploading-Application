@@ -213,7 +213,7 @@
             <objects>
                 <tableViewController id="O5A-Re-uM3" customClass="MenuViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="singleLineEtched" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="bGP-kK-6GS">
-                        <rect key="frame" x="0.0" y="64" width="320" height="372"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="372"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.87843143940000001" green="0.94901967050000002" blue="0.98039221759999995" alpha="1" colorSpace="deviceRGB"/>
                         <sections>
@@ -535,7 +535,7 @@
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7GY-vU-QiZ">
                                 <items>
                                     <navigationItem title="Terms of Use" id="Xbu-89-zRY">
-                                        <barButtonItem key="leftBarButtonItem" systemItem="done" id="Wni-Bh-o1V">
+                                        <barButtonItem key="leftBarButtonItem" title="Close" id="Wni-Bh-o1V">
                                             <connections>
                                                 <action selector="closeButton:" destination="dew-zm-mNG" id="a0h-Ch-NeA"/>
                                             </connections>
@@ -580,7 +580,7 @@
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ns2-Eh-xHS">
                                 <items>
                                     <navigationItem title="Copyright and Policies" id="91U-Yq-gCo">
-                                        <barButtonItem key="leftBarButtonItem" systemItem="done" id="QIt-BH-na1">
+                                        <barButtonItem key="leftBarButtonItem" title="Close" id="QIt-BH-na1">
                                             <connections>
                                                 <action selector="closeButton:" destination="HBg-1s-rlL" id="hNj-nq-p5w"/>
                                             </connections>
@@ -950,7 +950,7 @@
             <objects>
                 <tableViewController id="Rrt-je-eyF" customClass="CameraViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="WWa-Ii-FxK">
-                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.87843143940000001" green="0.94901967050000002" blue="0.98039221759999995" alpha="1" colorSpace="deviceRGB"/>
                         <sections>
@@ -1092,7 +1092,7 @@
             <objects>
                 <tableViewController id="1Al-gE-zbN" customClass="AccountViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="singleLineEtched" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="N1V-ac-rjT">
-                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.87843143940000001" green="0.94901967050000002" blue="0.98039221759999995" alpha="1" colorSpace="deviceRGB"/>
                         <sections>
@@ -1441,10 +1441,10 @@
             </objects>
             <point key="canvasLocation" x="1941" y="-1314"/>
         </scene>
-        <!--View Controller - Account Information-->
+        <!--Help View Controller - Account Information-->
         <scene sceneID="i00-f5-SEx">
             <objects>
-                <viewController id="Y5S-vk-5Ur" sceneMemberID="viewController">
+                <viewController id="Y5S-vk-5Ur" customClass="HelpViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="S1V-XB-6Tb">
                         <rect key="frame" x="0.0" y="20" width="320" height="411"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1452,7 +1452,11 @@
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2uk-Xt-Whi">
                                 <items>
                                     <navigationItem title="Account" id="30k-ho-Nkj">
-                                        <barButtonItem key="leftBarButtonItem" title="Item" id="iFJ-nH-vIt"/>
+                                        <barButtonItem key="leftBarButtonItem" title="Close" id="iFJ-nH-vIt">
+                                            <connections>
+                                                <action selector="closeButton:" destination="Y5S-vk-5Ur" id="pbm-J6-Ijh"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
@@ -1475,10 +1479,10 @@
             </objects>
             <point key="canvasLocation" x="4337" y="-731"/>
         </scene>
-        <!--View Controller - Subscriptions-->
+        <!--Help View Controller - Subscriptions-->
         <scene sceneID="tgl-Jb-sdq">
             <objects>
-                <viewController id="gqU-wy-hGc" sceneMemberID="viewController">
+                <viewController id="gqU-wy-hGc" customClass="HelpViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="L4m-tk-Tsx">
                         <rect key="frame" x="0.0" y="20" width="320" height="411"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1486,7 +1490,11 @@
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XZ0-IT-O6B">
                                 <items>
                                     <navigationItem title="Subscriptions" id="cnD-H8-yzO">
-                                        <barButtonItem key="leftBarButtonItem" title="Item" id="cd9-9e-OQK"/>
+                                        <barButtonItem key="leftBarButtonItem" title="Close" id="cd9-9e-OQK">
+                                            <connections>
+                                                <action selector="closeButton:" destination="gqU-wy-hGc" id="G2b-O9-fKW"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
@@ -1510,10 +1518,10 @@
             </objects>
             <point key="canvasLocation" x="4878" y="-731"/>
         </scene>
-        <!--View Controller - Camera Use-->
+        <!--Help View Controller - Camera Use-->
         <scene sceneID="yjH-6F-gbB">
             <objects>
-                <viewController id="YAh-2k-Y9p" sceneMemberID="viewController">
+                <viewController id="YAh-2k-Y9p" customClass="HelpViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="TAJ-dm-Nil">
                         <rect key="frame" x="0.0" y="20" width="320" height="411"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1521,7 +1529,11 @@
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qey-hz-qVY">
                                 <items>
                                     <navigationItem title="Camera" id="kQW-cE-0Vg">
-                                        <barButtonItem key="leftBarButtonItem" title="Item" id="MS1-eA-Woe"/>
+                                        <barButtonItem key="leftBarButtonItem" title="Close" id="MS1-eA-Woe">
+                                            <connections>
+                                                <action selector="closeButton:" destination="YAh-2k-Y9p" id="BQ2-Pn-xir"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
@@ -1570,7 +1582,7 @@
             <objects>
                 <tableViewController id="cEe-Po-GuG" customClass="PictureViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="PCs-vt-x6O">
-                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.87843143940000001" green="0.94901967050000002" blue="0.98039221759999995" alpha="1" colorSpace="deviceRGB"/>
                         <sections>
@@ -1694,9 +1706,9 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="4vu-6a-3dw"/>
-        <segue reference="2Cj-8V-dFs"/>
-        <segue reference="HRU-ib-MZ2"/>
         <segue reference="4R1-Dh-Arv"/>
+        <segue reference="vo9-0P-NRY"/>
+        <segue reference="3RF-i0-D3K"/>
+        <segue reference="HRU-ib-MZ2"/>
     </inferredMetricsTieBreakers>
 </document>

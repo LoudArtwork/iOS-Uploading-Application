@@ -10,4 +10,6 @@
 
 @interface HelpViewController : UIViewController
 
+- (IBAction)closeButton:(id)sender;
+
 @end

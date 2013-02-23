@@ -35,4 +35,17 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)closeButton:(id)sender {
+    if([NSString stringWithContentsOfURL:[NSURL URLWithString:@"http://www.google.com"]] != NULL) {
+        [self performSegueWithIdentifier:@"HelpToMenu" sender:self];
+    } else {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Warning!"
+                                                        message:@"You are not connected to the internet!"
+                                                       delegate:nil
+                                              cancelButtonTitle:@"OK"
+                                              otherButtonTitles:nil];
+        [alert show];
+        [self performSegueWithIdentifier:@"HelpToInitial" sender:self];
+    }
+}
 @end
