@@ -29,5 +29,18 @@
          landmarkName = "-tableView:didSelectRowAtIndexPath:"
          landmarkType = "5">
       </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "Loud Artwork/SubscriptionViewController.m"
+         timestampString = "383390580.157257"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "26"
+         endingLineNumber = "26"
+         landmarkName = "@implementation SubscriptionViewController"
+         landmarkType = "3">
+      </FileBreakpoint>
    </FileBreakpoints>
 </Bucket>

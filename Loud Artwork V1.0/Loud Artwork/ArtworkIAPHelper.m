@@ -15,9 +15,9 @@
     static ArtworkIAPHelper * sharedInstance;
     dispatch_once(&once, ^{
         NSSet * productIdentifiers = [NSSet setWithObjects:
-                                      @"com.loudartwork.LoudArtwork.BronzeAccess",
-                                      @"com.loudartwork.LoudArtwork.SilverAccess",
-                                      @"com.loudartwork.LoudArtwork.GoldAccess",
+                                      @"com.loudartwork.LoudArtwork.iap.BronzeAccess",
+                                      @"com.loudartwork.LoudArtwork.iap.SilverAccess",
+                                      @"com.loudartwork.LoudArtwork.iap.GoldAccess",
                                       nil];
         sharedInstance = [[self alloc] initWithProductIdentifiers:productIdentifiers];
     });
