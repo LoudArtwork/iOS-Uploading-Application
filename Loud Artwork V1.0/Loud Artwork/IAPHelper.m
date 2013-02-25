@@ -95,6 +95,7 @@ NSString *const IAPHelperProductPurchasedNotification = @"IAPHelperProductPurcha
 - (void)buyProduct:(SKProduct *)product {
     
     NSLog(@"Buying %@...", product.productIdentifier);
+    product.localizedTitle;
     
     SKPayment * payment = [SKPayment paymentWithProduct:product];
     [[SKPaymentQueue defaultQueue] addPayment:payment];
@@ -145,12 +146,52 @@ NSString *const IAPHelperProductPurchasedNotification = @"IAPHelperProductPurcha
 }
 
 - (void)provideContentForProductIdentifier:(NSString *)productIdentifier {
+    NSString *bid;
+    NSString *act;
+    
+    if([productIdentifier isEqualToString:@"com.loudartwork.LoudArtwork.iap.BronzeAccess"]) {
+        act = @"bronze";
+    } else if([productIdentifier isEqualToString:@"com.loudartwork.LoudArtwork.iap.SilverAccess"]) {
+        act = @"silver";
+    } else if([productIdentifier isEqualToString:@"com.loudartwork.LoudArtwork.iap.GoldAccess"]) {
+        act = @"gold";
+    }
+    
+    // ---------- Get Business ID ---------- //
+    NSString *docPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)objectAtIndex:0];
+    NSString *surveys = [docPath stringByAppendingPathComponent:@"account.csv"];
+    
+    if([[NSFileManager defaultManager] fileExistsAtPath:surveys]) {
+        NSFileHandle *fileHandle = [NSFileHandle fileHandleForReadingAtPath:surveys];
+        NSString *surveyResults = [[NSString alloc]initWithData:[fileHandle availableData] encoding:NSUTF8StringEncoding];
+        bid = surveyResults;
+        [fileHandle closeFile];
+    }
+    NSLog(@"got business id: %@", bid);
+    // ---------- Get Business ID ---------- //
+    
+    // ---------- Update Business in Database ---------- //
+    NSString *post = [NSString stringWithFormat:@"bid=%@&act=%@",bid,act];
+    NSData *postData = [post dataUsingEncoding:NSASCIIStringEncoding allowLossyConversion:YES];
+    NSString *postLength = [NSString stringWithFormat:@"%d", [postData length]];
+    
+    NSMutableURLRequest *request = [[NSMutableURLRequest alloc]initWithURL:[NSURL URLWithString:@"http://www.loudartwork.com/wp-includes/laEditSub.php"]];
+    [request setHTTPMethod:@"POST"];
+    [request setValue:postLength forHTTPHeaderField:@"Content-Length"];
+    [request setValue:@"application/x-www-form-urlencoded" forHTTPHeaderField:@"Content-Type"];
+    [request setHTTPBody:postData];
+    
+    NSData *returnData = [NSURLConnection sendSynchronousRequest:request returningResponse:nil error:nil];
+    // ---------- Update Business in Database ---------- //
     
     [_purchasedProductIdentifiers addObject:productIdentifier];
     [[NSUserDefaults standardUserDefaults] setBool:YES forKey:productIdentifier];
     [[NSUserDefaults standardUserDefaults] synchronize];
     [[NSNotificationCenter defaultCenter] postNotificationName:IAPHelperProductPurchasedNotification object:productIdentifier userInfo:nil];
-    
+}
+
+- (void)restoreCompletedTransactions {
+    [[SKPaymentQueue defaultQueue] restoreCompletedTransactions];
 }
 
 

@@ -8,7 +8,9 @@
 
 #import "MenuViewController.h"
 
-@interface MenuViewController ()
+@interface MenuViewController () {
+    NSString *_act;
+}
 
 @end
 
@@ -55,6 +57,7 @@
     // ---------- Get Business Info ---------- //
     
     self.accountName.title = [NSString stringWithFormat:@"%@", [json objectForKey:@"nam"]];
+    _act = [NSString stringWithFormat:@"%@", [json objectForKey:@"act"]];
     NSLog(@"Menu View Controller: Business name added to main menu");
 }
 
@@ -102,10 +105,35 @@
         } else {
             NSLog(@"Menu View Controller: Business Not Signed Out!");
         }
+    } else if (section == 0 && row == 3) {
+        if([NSString stringWithContentsOfURL:[NSURL URLWithString:@"http://www.google.com"]] != NULL) {
+            NSLog(@"Menu View Controller: User selected subscription");
+            [self performSegueWithIdentifier:@"MenuToSub" sender:self];
+        } else {
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Warning!"
+                                                            message:@"You are not connected to the internet!"
+                                                           delegate:nil
+                                                  cancelButtonTitle:@"OK"
+                                                  otherButtonTitles:nil];
+            [alert show];
+            [self performSegueWithIdentifier:@"MenuToInitial" sender:self];
+        }
     } else if (section == 1 && row == 0) {
         if([NSString stringWithContentsOfURL:[NSURL URLWithString:@"http://www.google.com"]] != NULL) {
             NSLog(@"Menu View Controller: User selected upload ad");
-            [self performSegueWithIdentifier:@"MenuToBronze" sender:self];
+            if([_act isEqualToString:@"bronze"]) {
+                [self performSegueWithIdentifier:@"MenuToBronze" sender:self];
+            } else if ([_act isEqualToString:@"silver"] || [_act isEqualToString:@"gold"]){
+                [self performSegueWithIdentifier:@"MenuToSilver" sender:self];
+            } else {
+                UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error!"
+                                                                message:@"You do not have a valid subscription at this time!"
+                                                               delegate:nil
+                                                      cancelButtonTitle:@"OK"
+                                                      otherButtonTitles:nil];
+                [alert show];
+                [self performSegueWithIdentifier:@"MenuToSub" sender:self];
+            }
         } else {
             UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Warning!"
                                                             message:@"You are not connected to the internet!"
@@ -118,7 +146,17 @@
     } else if (section == 1 && row == 1) {
         if([NSString stringWithContentsOfURL:[NSURL URLWithString:@"http://www.google.com"]] != NULL) {
             NSLog(@"Menu View Controller: User selected view current ad");
-            [self performSegueWithIdentifier:@"MenuToAd" sender:self];
+            if([_act isEqualToString:@"bronze"] || [_act isEqualToString:@"silver"] || [_act isEqualToString:@"gold"]) {
+                [self performSegueWithIdentifier:@"MenuToAd" sender:self];
+            } else {
+                UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error!"
+                                                                message:@"You do not have a valid subscription at this time!"
+                                                               delegate:nil
+                                                      cancelButtonTitle:@"OK"
+                                                      otherButtonTitles:nil];
+                [alert show];
+                [self performSegueWithIdentifier:@"MenuToSub" sender:self];
+            }
         } else {
             UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Warning!"
                                                             message:@"You are not connected to the internet!"
@@ -160,7 +198,17 @@
 - (IBAction)cameraButton:(id)sender {
     if([NSString stringWithContentsOfURL:[NSURL URLWithString:@"http://www.google.com"]] != NULL) {
         NSLog(@"Menu View Controller: User selected camera");
-        [self performSegueWithIdentifier:@"MenuToCamera" sender:self];
+        if([_act isEqualToString:@"bronze"] || [_act isEqualToString:@"silver"] || [_act isEqualToString:@"gold"]) {
+            [self performSegueWithIdentifier:@"MenuToCamera" sender:self];
+        } else {
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error!"
+                                                            message:@"You do not have a valid subscription at this time!"
+                                                           delegate:nil
+                                                  cancelButtonTitle:@"OK"
+                                                  otherButtonTitles:nil];
+            [alert show];
+            [self performSegueWithIdentifier:@"MenuToSub" sender:self];
+        }
     } else {
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Warning!"
                                                         message:@"You are not connected to the internet!"

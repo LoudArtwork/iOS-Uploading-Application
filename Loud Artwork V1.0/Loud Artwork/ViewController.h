@@ -11,7 +11,6 @@
 @interface ViewController : UIViewController
 
 - (IBAction)signIn:(id)sender;
-- (IBAction)testIAP:(id)sender;
 
 @property (weak, nonatomic) IBOutlet UIActivityIndicatorView *activityIndicator;
 

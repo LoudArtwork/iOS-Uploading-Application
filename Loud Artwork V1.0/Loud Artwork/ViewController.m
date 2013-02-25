@@ -7,8 +7,6 @@
 //
 
 #import "ViewController.h"
-#import "ArtworkIAPHelper.h"
-#import <StoreKit/StoreKit.h>
 
 @interface ViewController ()
 
@@ -17,7 +15,7 @@
 @implementation ViewController
 
 - (void)viewDidLoad {
-    [super viewDidLoad]; 
+    [super viewDidLoad];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -30,14 +28,6 @@
            withObject: nil
            afterDelay: 0];
     return;
-}
-
-- (IBAction)testIAP:(id)sender {
-    [[ArtworkIAPHelper sharedInstance] requestProductsWithCompletionHandler:^(BOOL success, NSArray *products) {
-        if (success) {
-            NSLog(@"The content of store is %@",products);
-        }
-    }];
 }
 
 - (void) checkMethod {

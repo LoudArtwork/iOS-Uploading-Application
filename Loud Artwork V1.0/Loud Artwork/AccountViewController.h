@@ -20,7 +20,6 @@
 @property (weak, nonatomic) IBOutlet UITextField *pho;
 @property (weak, nonatomic) IBOutlet UITextField *ema;
 @property (weak, nonatomic) IBOutlet UITextField *act;
-@property (weak, nonatomic) IBOutlet UITextField *sub;
 
 - (IBAction)saveButton:(id)sender;
 - (IBAction)closeButton:(id)sender;

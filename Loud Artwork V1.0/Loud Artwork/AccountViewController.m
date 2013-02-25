@@ -64,6 +64,7 @@
         self.pos.text = [NSString stringWithFormat:@"%@", [json objectForKey:@"pos"]];
         self.ema.text = [NSString stringWithFormat:@"%@", [json objectForKey:@"ema"]];
         self.pho.text = [NSString stringWithFormat:@"%@", [json objectForKey:@"pho"]];
+        self.act.text = [NSString stringWithFormat:@"%@", [json objectForKey:@"act"]];
     } else {
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Warning!"
                                                         message:@"You are not connected to the internet!"

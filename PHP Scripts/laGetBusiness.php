@@ -60,13 +60,14 @@
             $pos = "fail";
             $ema = "fail";
             $pho = "fail";
+            $act = "fail";
                 
             // Look up code in database
             $user_id = 0;
-            $stmt = $this->db->prepare('SELECT bid, name, address, city, province, country, postal, email, phone FROM la_business_info WHERE bid=?');
+            $stmt = $this->db->prepare('SELECT bid, name, address, city, province, country, postal, email, phone, active FROM la_business_info WHERE bid=?');
             $stmt->bind_param("s", $b_id);
             $stmt->execute();
-            $stmt->bind_result($bid, $nam, $add, $cit, $pro, $cou, $pos, $ema, $pho);
+            $stmt->bind_result($bid, $nam, $add, $cit, $pro, $cou, $pos, $ema, $pho, $act);
             
             while ($stmt->fetch()) {
                break;
@@ -75,7 +76,7 @@
             $stmt->close();
              
             // Return unlock code, encoded with JSON
-            $result = array("bid" => $bid, "nam" => $nam, "add" => $add, "cit" => $cit, "pro" => $pro, "cou" => $cou, "pos" => $pos, "ema" => $ema, "pho" => $pho, "exp" => $exp,);
+            $result = array("bid" => $bid, "nam" => $nam, "add" => $add, "cit" => $cit, "pro" => $pro, "cou" => $cou, "pos" => $pos, "ema" => $ema, "pho" => $pho, "exp" => $exp, "act" => $act,);
             sendResponse(200, json_encode($result));
             return true;
          }

@@ -247,4 +247,18 @@
     [self resignFirstResponder];
 }
 
+- (IBAction)closeButton:(id)sender {
+    if([NSString stringWithContentsOfURL:[NSURL URLWithString:@"http://www.google.com"]] != NULL) {
+        [self performSegueWithIdentifier:@"CameraToMenu" sender:self];
+    } else {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Warning!"
+                                                        message:@"You are not connected to the internet!"
+                                                       delegate:nil
+                                              cancelButtonTitle:@"OK"
+                                              otherButtonTitles:nil];
+        [alert show];
+        [self performSegueWithIdentifier:@"CameraToInitial" sender:self];
+    }
+}
+
 @end

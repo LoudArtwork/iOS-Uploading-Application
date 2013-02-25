@@ -10,4 +10,6 @@
 
 @interface SubscriptionViewController : UITableViewController
 
+- (IBAction)closeButton:(id)sender;
+
 @end
