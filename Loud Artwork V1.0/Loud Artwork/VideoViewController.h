@@ -10,7 +10,8 @@
 
 @interface VideoViewController : UITableViewController
 @property (weak, nonatomic) IBOutlet UITextField *videoCode;
-@property (weak, nonatomic) IBOutlet UIBarButtonItem *closeButton;
-@property (weak, nonatomic) IBOutlet UIBarButtonItem *uploadButton;
+- (IBAction)closeButton:(id)sender;
+- (IBAction)uploadButton:(id)sender;
+- (IBAction)retractKeyBoard:(id)sender;
 
 @end
