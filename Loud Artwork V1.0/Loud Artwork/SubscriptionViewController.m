@@ -108,9 +108,10 @@
     
     SKProduct * product = (SKProduct *) _products[indexPath.row];
     cell.textLabel.text = product.localizedTitle;
+    cell.detailTextLabel.text = @"30 Day Subscription";
     
-    [_priceFormatter setLocale:product.priceLocale];
-    cell.detailTextLabel.text = [_priceFormatter stringFromNumber:product.price];
+    //[_priceFormatter setLocale:product.priceLocale];
+    //cell.detailTextLabel.text = [_priceFormatter stringFromNumber:product.price];
     
     if([_active isEqualToString:@"bronze"] && indexPath.row == 0) {
         cell.accessoryType = UITableViewCellAccessoryCheckmark;
@@ -118,25 +119,26 @@
     } else if([_active isEqualToString:@"silver"] && indexPath.row == 0) {
         cell.accessoryType = UITableViewCellAccessoryCheckmark;
         cell.accessoryView = nil;
-    } else if([_active isEqualToString:@"silver"] && indexPath.row == 3) {
+    } else if([_active isEqualToString:@"silver"] && indexPath.row == 1) {
         cell.accessoryType = UITableViewCellAccessoryCheckmark;
         cell.accessoryView = nil;
     } else if([_active isEqualToString:@"gold"]) {
         cell.accessoryType = UITableViewCellAccessoryCheckmark;
         cell.accessoryView = nil;
     } else {
-        if ([[ArtworkIAPHelper sharedInstance] productPurchased:product.productIdentifier]) {
-            cell.accessoryType = UITableViewCellAccessoryCheckmark;
-            cell.accessoryView = nil;
-        } else {
+        //if ([[ArtworkIAPHelper sharedInstance] productPurchased:product.productIdentifier]) {
+          //  cell.accessoryType = UITableViewCellAccessoryCheckmark;
+            //cell.accessoryView = nil;
+        //} else {
             UIButton *buyButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
             buyButton.frame = CGRectMake(0, 0, 72, 37);
-            [buyButton setTitle:@"Buy" forState:UIControlStateNormal];
+            [_priceFormatter setLocale:product.priceLocale];
+            [buyButton setTitle:[_priceFormatter stringFromNumber:product.price] forState:UIControlStateNormal];
             buyButton.tag = indexPath.row;
             [buyButton addTarget:self action:@selector(buyButtonTapped:) forControlEvents:UIControlEventTouchUpInside];
             cell.accessoryType = UITableViewCellAccessoryNone;
             cell.accessoryView = buyButton;
-        }
+        //}
     }
     
     return cell;

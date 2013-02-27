@@ -213,7 +213,7 @@
             <objects>
                 <tableViewController id="O5A-Re-uM3" customClass="MenuViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="singleLineEtched" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="bGP-kK-6GS">
-                        <rect key="frame" x="0.0" y="20" width="320" height="372"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="372"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.87843143940000001" green="0.94901967050000002" blue="0.98039221759999995" alpha="1" colorSpace="deviceRGB"/>
                         <sections>
@@ -949,7 +949,7 @@
             <objects>
                 <tableViewController id="Rrt-je-eyF" customClass="CameraViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="WWa-Ii-FxK">
-                        <rect key="frame" x="0.0" y="20" width="320" height="416"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.87843143940000001" green="0.94901967050000002" blue="0.98039221759999995" alpha="1" colorSpace="deviceRGB"/>
                         <sections>
@@ -1091,7 +1091,7 @@
             <objects>
                 <tableViewController id="1Al-gE-zbN" customClass="AccountViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="singleLineEtched" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="N1V-ac-rjT">
-                        <rect key="frame" x="0.0" y="20" width="320" height="416"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.87843143940000001" green="0.94901967050000002" blue="0.98039221759999995" alpha="1" colorSpace="deviceRGB"/>
                         <sections>
@@ -1297,7 +1297,7 @@
                                                         <constraint firstAttribute="height" constant="30" id="sWw-y8-gWB"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                                                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                                     <connections>
                                                         <action selector="retractKeyBoard:" destination="1Al-gE-zbN" eventType="editingDidEndOnExit" id="W6O-Ca-ana"/>
                                                     </connections>
@@ -1323,7 +1323,7 @@
                                                         <constraint firstAttribute="height" constant="30" id="haT-kl-afz"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                    <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
                                                     <connections>
                                                         <action selector="retractKeyBoard:" destination="1Al-gE-zbN" eventType="editingDidEndOnExit" id="2qS-5u-hre"/>
                                                     </connections>
@@ -1435,12 +1435,24 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8pf-L9-7CZ">
+                                <color key="backgroundColor" red="0.87843143940000001" green="0.94901967050000002" blue="0.98039221759999995" alpha="1" colorSpace="deviceRGB"/>
+                                <string key="text">The account section will provide you with all the details of your account and give you the ability to change any of your information. You cannot change your Business ID.
+
+1) Click on any information you want to change2) Change the information as desired3) Click the “Save” button to save your changes4) You will receive a success or failure message</string>
+                                <fontDescription key="fontDescription" name="Cambria" family="Cambria" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" red="0.87843143940000001" green="0.94901967050000002" blue="0.98039221759999995" alpha="1" colorSpace="deviceRGB"/>
                         <constraints>
+                            <constraint firstItem="8pf-L9-7CZ" firstAttribute="top" secondItem="2uk-Xt-Whi" secondAttribute="bottom" type="default" id="9aJ-YG-Mtf"/>
                             <constraint firstItem="2uk-Xt-Whi" firstAttribute="trailing" secondItem="S1V-XB-6Tb" secondAttribute="trailing" type="default" id="JD7-hi-99R"/>
                             <constraint firstItem="2uk-Xt-Whi" firstAttribute="leading" secondItem="S1V-XB-6Tb" secondAttribute="leading" type="default" id="OyS-Ba-00s"/>
+                            <constraint firstItem="8pf-L9-7CZ" firstAttribute="leading" secondItem="S1V-XB-6Tb" secondAttribute="leading" type="default" id="Y6v-0L-bH7"/>
+                            <constraint firstItem="8pf-L9-7CZ" firstAttribute="trailing" secondItem="S1V-XB-6Tb" secondAttribute="trailing" type="default" id="kFD-gP-uyK"/>
                             <constraint firstItem="2uk-Xt-Whi" firstAttribute="top" secondItem="S1V-XB-6Tb" secondAttribute="top" type="default" id="kME-Xo-QBF"/>
+                            <constraint firstItem="8pf-L9-7CZ" firstAttribute="bottom" secondItem="S1V-XB-6Tb" secondAttribute="bottom" type="default" id="sg7-fD-L7r"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Account Information" id="cvf-r7-pkV"/>
@@ -1473,10 +1485,20 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="otv-XU-cOf">
+                                <color key="backgroundColor" red="0.87843143940000001" green="0.94901967050000002" blue="0.98039221759999995" alpha="1" colorSpace="deviceRGB"/>
+                                <string key="text">The subscription page will let you purchase a subscription to the Loud Artwork program. It will also show you which subscription level you have.See which subscription level works for you!Bronze:- Upload images to the Loud Artwork Site- Picture advertisement of your choosing is attached to every upload- Change your advertisement at any time for free!Silver:- All the features of the Bronze level included- Ability to upload video advertisements</string>
+                                <fontDescription key="fontDescription" name="Cambria" family="Cambria" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" red="0.87843143940000001" green="0.94901967050000002" blue="0.98039221759999995" alpha="1" colorSpace="deviceRGB"/>
                         <constraints>
+                            <constraint firstItem="otv-XU-cOf" firstAttribute="leading" secondItem="L4m-tk-Tsx" secondAttribute="leading" type="default" id="9Ta-Mq-vVC"/>
                             <constraint firstItem="XZ0-IT-O6B" firstAttribute="top" secondItem="L4m-tk-Tsx" secondAttribute="top" type="default" id="Adl-Dr-WNl"/>
+                            <constraint firstItem="otv-XU-cOf" firstAttribute="trailing" secondItem="L4m-tk-Tsx" secondAttribute="trailing" type="default" id="H1Z-cP-3ZC"/>
+                            <constraint firstItem="otv-XU-cOf" firstAttribute="bottom" secondItem="L4m-tk-Tsx" secondAttribute="bottom" type="default" id="HKa-NY-OtG"/>
+                            <constraint firstItem="otv-XU-cOf" firstAttribute="top" secondItem="XZ0-IT-O6B" secondAttribute="bottom" type="default" id="VAA-Wl-BDE"/>
                             <constraint firstItem="XZ0-IT-O6B" firstAttribute="leading" secondItem="L4m-tk-Tsx" secondAttribute="leading" type="default" id="XpT-Zu-593"/>
                             <constraint firstItem="XZ0-IT-O6B" firstAttribute="trailing" secondItem="L4m-tk-Tsx" secondAttribute="trailing" type="default" id="hh3-sd-aQS"/>
                         </constraints>
@@ -1501,6 +1523,14 @@
                         <rect key="frame" x="0.0" y="20" width="320" height="411"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XN5-0u-4dq">
+                                <color key="backgroundColor" red="0.87843143940000001" green="0.94901967050000002" blue="0.98039221759999995" alpha="1" colorSpace="deviceRGB"/>
+                                <string key="text">The uploading camera is the main feature of this application. You will be able to use it to upload a guest’s Loud Artwork to our website along with your company’s advertisement.
+
+1) Click on “Select Image”2) Collect guest name, email, and age3) Click the “Upload” button to upload the image4) You will receive a success or failure message</string>
+                                <fontDescription key="fontDescription" name="Cambria" family="Cambria" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qey-hz-qVY">
                                 <items>
                                     <navigationItem title="Camera" id="kQW-cE-0Vg">
@@ -1515,9 +1545,13 @@
                         </subviews>
                         <color key="backgroundColor" red="0.87843143940000001" green="0.94901967050000002" blue="0.98039221759999995" alpha="1" colorSpace="deviceRGB"/>
                         <constraints>
+                            <constraint firstItem="XN5-0u-4dq" firstAttribute="bottom" secondItem="TAJ-dm-Nil" secondAttribute="bottom" type="default" id="5Iq-Db-UNH"/>
+                            <constraint firstItem="XN5-0u-4dq" firstAttribute="leading" secondItem="TAJ-dm-Nil" secondAttribute="leading" type="default" id="5uh-UC-7oV"/>
                             <constraint firstItem="qey-hz-qVY" firstAttribute="leading" secondItem="TAJ-dm-Nil" secondAttribute="leading" type="default" id="G8E-xe-cN0"/>
                             <constraint firstItem="qey-hz-qVY" firstAttribute="top" secondItem="TAJ-dm-Nil" secondAttribute="top" type="default" id="IPe-Lo-Qc5"/>
                             <constraint firstItem="qey-hz-qVY" firstAttribute="trailing" secondItem="TAJ-dm-Nil" secondAttribute="trailing" type="default" id="WWq-3s-ren"/>
+                            <constraint firstItem="XN5-0u-4dq" firstAttribute="top" secondItem="qey-hz-qVY" secondAttribute="bottom" type="default" id="dPT-XL-Mjd"/>
+                            <constraint firstItem="XN5-0u-4dq" firstAttribute="trailing" secondItem="TAJ-dm-Nil" secondAttribute="trailing" type="default" id="lsS-jv-LoV"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Camera Use" id="3Hv-N7-9QM"/>
@@ -1557,7 +1591,7 @@
             <objects>
                 <tableViewController id="cEe-Po-GuG" customClass="PictureViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="PCs-vt-x6O">
-                        <rect key="frame" x="0.0" y="20" width="320" height="416"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.87843143940000001" green="0.94901967050000002" blue="0.98039221759999995" alpha="1" colorSpace="deviceRGB"/>
                         <sections>
@@ -1811,7 +1845,7 @@
                                             <subviews>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Youtube video code" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zBE-nA-odw">
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits"/>
+                                                    <textInputTraits key="textInputTraits" autocorrectionType="no"/>
                                                     <connections>
                                                         <action selector="retractKeyBoard:" destination="XLX-QA-RRA" eventType="editingDidEndOnExit" id="ozR-1O-blM"/>
                                                     </connections>
@@ -1858,7 +1892,7 @@
     <inferredMetricsTieBreakers>
         <segue reference="YJX-P9-nZ0"/>
         <segue reference="5Np-Ny-JUf"/>
-        <segue reference="HRU-ib-MZ2"/>
         <segue reference="4R1-Dh-Arv"/>
+        <segue reference="gUa-L0-VAn"/>
     </inferredMetricsTieBreakers>
 </document>

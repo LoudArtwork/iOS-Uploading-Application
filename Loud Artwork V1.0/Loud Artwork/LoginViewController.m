@@ -155,22 +155,7 @@
     NSString *rtn = [NSString stringWithFormat:@"%@", [json objectForKey:@"rtn"]];
     // ---------- Send Email ---------- //
     
-    if([rtn isEqualToString:[[alertView textFieldAtIndex:0] text]]){
-        // ---------- Send Email ---------- //
-        post = [NSString stringWithFormat:@"ema=%@",rtn];
-        postData = [post dataUsingEncoding:NSASCIIStringEncoding allowLossyConversion:YES];
-        postLength = [NSString stringWithFormat:@"%d", [postData length]];
-        
-        request = [[NSMutableURLRequest alloc]initWithURL:[NSURL URLWithString:@"http://www.loudartwork.com/wp-includes/laForgotEmail.php"]];
-        [request setHTTPMethod:@"POST"];
-        [request setValue:postLength forHTTPHeaderField:@"Content-Length"];
-        [request setValue:@"application/x-www-form-urlencoded" forHTTPHeaderField:@"Content-Type"];
-        [request setHTTPBody:postData];
-        
-        NSData *returnData = [NSURLConnection sendSynchronousRequest:request returningResponse:nil error:nil];
-        NSString *returnString = [[NSString alloc] initWithData:returnData encoding:NSUTF8StringEncoding];
-        NSLog(@"Create View Controller: Email Status = %@", returnString);
-        // ---------- Send Email ---------- //
+    if([rtn isEqualToString:@"1"]){
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Success!"
                                                     message:@"Your password has been emailed!"
                                                    delegate:nil
@@ -183,7 +168,8 @@
                                                        delegate:nil
                                               cancelButtonTitle:@"OK"
                                               otherButtonTitles:nil];
-        [alert show];    }
+        [alert show];
+    }
 }
 
 - (IBAction)retractKeyBoard:(id)sender {

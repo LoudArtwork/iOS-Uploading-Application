@@ -61,8 +61,20 @@
     NSLog(@"Menu View Controller: Business name added to main menu");
 }
 
+- (void)viewDidAppear {
+    if([_act isEqualToString:@"expired"]) {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Warning!"
+                                                        message:@"Your subscription has expired, you do not have a valid subscription at this time!"
+                                                       delegate:nil
+                                              cancelButtonTitle:@"OK"
+                                              otherButtonTitles:nil];
+        [alert show];
+        [self performSegueWithIdentifier:@"MenuToSub" sender:self];
+    }
+}
+
 - (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning]; 
+    [super didReceiveMemoryWarning];
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {

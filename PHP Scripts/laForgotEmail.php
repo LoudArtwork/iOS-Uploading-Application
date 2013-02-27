@@ -1,6 +1,6 @@
 <?php
     $con = mysql_connect("localhost","dienamicmisqlwp","yp5YR053!2g");
-    $pos = "fail";
+    $rtn = "fail";
     
     if (!$con)
     {
@@ -9,13 +9,21 @@
     
     mysql_select_db("dienamic2mis", $con);
     
-    $sql = "SELECT email, password FROM la_business_info WHERE email='$_POST[ema]'";
+    $sql = "SELECT email FROM la_business_info WHERE email='$_POST[ema]'";
     $result = mysql_query($sql,$con);
     $row = mysql_fetch_array($result);
-    $pos = $row['email'];
+    $rtn = $row['email'];
+    
+    if($_POST[ema] == $rtn) {
+        $sql="UPDATE la_business_info SET password='$_POST[nam]', address='$_POST[add]', city='$_POST[cit]', province='$_POST[pro]', country='$_POST[cou]', postal='$_POST[pos]', email='$_POST[ema]', phone='$_POST[pho]' WHERE bid='$_POST[bid]'";
+        
+        if (!mysql_query($sql,$con))
+        {
+            die('Error: ' . mysql_error());
+        }
+    }
     
     mysql_close($con);
-
     
     //define the receiver of the email
     $to = $_POST[ema];
@@ -30,3 +38,10 @@
     //if the message is sent successfully print "Mail sent". Otherwise print "Mail failed"
     echo $mail_sent ? "Mail sent" : "Mail failed";
 ?>
+
+$sql="UPDATE la_business_info SET name='$_POST[nam]', address='$_POST[add]', city='$_POST[cit]', province='$_POST[pro]', country='$_POST[cou]', postal='$_POST[pos]', email='$_POST[ema]', phone='$_POST[pho]' WHERE bid='$_POST[bid]'";
+
+if (!mysql_query($sql,$con))
+{
+    die('Error: ' . mysql_error());
+}
