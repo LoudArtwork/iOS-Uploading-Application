@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface PictureViewController : UITableViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate> {
+@interface PictureViewController : UITableViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate, UIPopoverControllerDelegate> {
     BOOL newMedia;
 }
 
@@ -17,5 +17,6 @@
 
 @property (weak, nonatomic) IBOutlet UIImageView *uploadImage;
 @property (weak, nonatomic) IBOutlet UIActivityIndicatorView *activityIndicator;
+@property (nonatomic, retain) UIPopoverController *imagePopover;
 
 @end

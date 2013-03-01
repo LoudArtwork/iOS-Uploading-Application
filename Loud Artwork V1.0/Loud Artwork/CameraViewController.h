@@ -17,6 +17,7 @@
 @property (weak, nonatomic) IBOutlet UITextField *ema;
 @property (weak, nonatomic) IBOutlet UIImageView *uploadImage;
 @property (weak, nonatomic) IBOutlet UIActivityIndicatorView *activityIndicator;
+@property (nonatomic, retain) UIPopoverController *imagePopover;
 
 - (IBAction)retractKeyBoard:(id)sender;
 - (IBAction)closeButton:(id)sender;

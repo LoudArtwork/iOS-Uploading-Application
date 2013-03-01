@@ -495,7 +495,7 @@
                     <connections>
                         <outlet property="myWebView" destination="604-JX-mD0" id="hb1-fm-XI1"/>
                         <segue destination="dxz-9Q-AF9" kind="modal" identifier="CurrentToMenu" id="zIs-Wp-s2r"/>
-                        <segue destination="boI-Cl-LKV" kind="modal" identifier="MenuToInitial" id="VPJ-8K-z3W"/>
+                        <segue destination="boI-Cl-LKV" kind="modal" identifier="CurrentToInitial" id="VPJ-8K-z3W"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aJH-f6-Vbg" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -899,7 +899,7 @@
                     <navigationItem key="navigationItem" title="Sign Up" id="28V-1f-yr7">
                         <barButtonItem key="leftBarButtonItem" title="Close" id="aQJ-aX-KGz">
                             <connections>
-                                <segue destination="ygx-SM-och" kind="modal" id="6fb-54-b3H"/>
+                                <segue destination="6J3-fi-lm4" kind="modal" id="kTz-GY-dr8"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Save" id="X6N-1d-f5C">
@@ -1068,7 +1068,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tjc-Eq-JWU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="770" y="-1366"/>
+            <point key="canvasLocation" x="782" y="-1366"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="TGT-mS-Q9u">
@@ -1338,7 +1338,7 @@
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
-                            <tableViewSection headerTitle="Subscription" id="el5-fV-IJg">
+                            <tableViewSection headerTitle="Subscription Information" id="el5-fV-IJg">
                                 <cells>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="Wh4-YI-gEL">
                                         <rect key="frame" x="0.0" y="586" width="320" height="46"/>
@@ -1439,7 +1439,11 @@
                                 <color key="backgroundColor" red="0.87843143940000001" green="0.94901967050000002" blue="0.98039221759999995" alpha="1" colorSpace="deviceRGB"/>
                                 <string key="text">The account section will provide you with all the details of your account and give you the ability to change any of your information. You cannot change your Business ID.
 
-1) Click on any information you want to change2) Change the information as desired3) Click the “Save” button to save your changes4) You will receive a success or failure message</string>
+1) Click on any information you want to change
+2) Change the information as desired
+3) Click the “Save” button to save your changes
+4) You will receive a success or failure message
+</string>
                                 <fontDescription key="fontDescription" name="Cambria" family="Cambria" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -1487,7 +1491,18 @@
                             </navigationBar>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="otv-XU-cOf">
                                 <color key="backgroundColor" red="0.87843143940000001" green="0.94901967050000002" blue="0.98039221759999995" alpha="1" colorSpace="deviceRGB"/>
-                                <string key="text">The subscription page will let you purchase a subscription to the Loud Artwork program. It will also show you which subscription level you have.See which subscription level works for you!Bronze:- Upload images to the Loud Artwork Site- Picture advertisement of your choosing is attached to every upload- Change your advertisement at any time for free!Silver:- All the features of the Bronze level included- Ability to upload video advertisements</string>
+                                <string key="text">The subscription page will let you purchase a subscription to the Loud Artwork program. It will also show you which subscription level you have.See which subscription level works for you!
+
+Bronze:
+- Upload images to the Loud Artwork Site
+- Picture advertisement of your choosing is attached to every upload
+- Change your advertisement at any time for free!
+
+Silver:
+- All the features of the Bronze level included
+- Ability to upload video advertisements
+
+</string>
                                 <fontDescription key="fontDescription" name="Cambria" family="Cambria" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -1527,7 +1542,11 @@
                                 <color key="backgroundColor" red="0.87843143940000001" green="0.94901967050000002" blue="0.98039221759999995" alpha="1" colorSpace="deviceRGB"/>
                                 <string key="text">The uploading camera is the main feature of this application. You will be able to use it to upload a guest’s Loud Artwork to our website along with your company’s advertisement.
 
-1) Click on “Select Image”2) Collect guest name, email, and age3) Click the “Upload” button to upload the image4) You will receive a success or failure message</string>
+1) Click on “Select Image”
+2) Collect guest name, email, and age
+3) Click the “Upload” button to upload the image
+4) You will receive a success or failure message
+</string>
                                 <fontDescription key="fontDescription" name="Cambria" family="Cambria" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -1890,9 +1909,9 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="YJX-P9-nZ0"/>
-        <segue reference="5Np-Ny-JUf"/>
-        <segue reference="4R1-Dh-Arv"/>
+        <segue reference="kTz-GY-dr8"/>
+        <segue reference="2Cj-8V-dFs"/>
+        <segue reference="4vu-6a-3dw"/>
         <segue reference="gUa-L0-VAn"/>
     </inferredMetricsTieBreakers>
 </document>

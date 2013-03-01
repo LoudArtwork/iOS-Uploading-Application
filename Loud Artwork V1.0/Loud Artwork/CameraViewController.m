@@ -14,6 +14,7 @@
 @end
 
 @implementation CameraViewController
+@synthesize imagePopover;
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -49,9 +50,26 @@
             imagePicker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
             imagePicker.mediaTypes = [NSArray arrayWithObjects: (NSString *) kUTTypeImage, nil];
             imagePicker.allowsEditing = NO;
-            [self presentModalViewController:imagePicker animated:YES];
-            newMedia = NO;
+            
+            if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad){
+                NSLog(@"pad");
+                //UIPopoverController *imagePopover;
+                
+                if ([imagePopover isPopoverVisible]) {
+                    [imagePopover dismissPopoverAnimated:YES];
+                    imagePopover = nil;
+                } else {
+                    imagePopover = [[UIPopoverController alloc] initWithContentViewController:imagePicker];
+                    [imagePopover presentPopoverFromRect:self.activityIndicator.bounds inView:self.view permittedArrowDirections:UIPopoverArrowDirectionAny animated:YES];
+                }
+                
+            } else {
+                NSLog(@"phone");
+                [self presentModalViewController:imagePicker animated:YES];
+                newMedia = NO;
+            }
         }
+
     }
 }
 
