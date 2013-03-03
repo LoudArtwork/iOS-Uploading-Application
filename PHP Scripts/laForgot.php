@@ -63,14 +63,14 @@
             $stmt->close();
              
              
-            $result = array("rtn" => $rtn);
+            $result = array("rtn" => 1);
             sendResponse(200, json_encode($result));
              
             return true;
          }
         
-         sendResponse(400, 'Invalid request');
-         return false;
+         $result = array("rtn" => 1);
+            sendResponse(200, json_encode($result));
       }
    }
     
